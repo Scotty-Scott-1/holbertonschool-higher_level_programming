@@ -165,3 +165,15 @@ Tips: ord()
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-if_else_loops_functions
 File: 8-uppercase.py
+
+TASK 9
+Write a function that prints the last digit of a number.
+
+Prototype: def print_last_digit(number):
+Returns the value of the last digit
+You are not allowed to import any module
+You don’t need to understand __import__
+
+GitHub repository: holbertonschool-higher_level_programming
+Directory: python-if_else_loops_functions
+File: 9-print_last_digit.py
