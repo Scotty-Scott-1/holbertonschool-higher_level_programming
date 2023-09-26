@@ -77,3 +77,16 @@ You are not allowed to import any module
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-if_else_loops_functions
 File: 2-print_alphabet.py
+
+Write a program that prints the ASCII alphabet, in lowercase, not followed by a new line.
+
+TASK 3
+Print all the letters except q and e
+You can only use one print function with string format
+You can only use one loop in your code
+You are not allowed to store characters in a variable
+You are not allowed to import any module
+
+GitHub repository: holbertonschool-higher_level_programming
+Directory: python-if_else_loops_functions
+File: 3-print_alphabt.py
