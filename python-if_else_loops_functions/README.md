@@ -136,3 +136,18 @@ GitHub repository: holbertonschool-higher_level_programming
 Directory: python-if_else_loops_functions
 File: 6-print_comb3.py
 
+
+TASK 7
+Write a function that checks for lowercase character.
+
+Prototype: def islower(c):
+Returns True if c is lowercase
+Returns False otherwise
+You are not allowed to import any module
+You are not allowed to use str.upper() and str.isupper()
+Tips: ord()
+You don’t need to understand __import__
+
+GitHub repository: holbertonschool-higher_level_programming
+Directory: python-if_else_loops_functions
+File: 7-islower.py
