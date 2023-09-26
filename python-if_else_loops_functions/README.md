@@ -1,0 +1,47 @@
+Learning Objectives
+At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
+
+General
+Why indentation is so important in Python
+How to use the if, if ... else statements
+How to use comments
+How to affect values to variables
+How to use the while and for loops
+How to use the break and continues statements
+How to use else clauses on loops
+What does the pass statement do, and when to use it
+How to use range
+What is a function and how do you use functions
+What does return a function that does not use any return statement
+Scope of variables
+What’s a traceback
+What are the arithmetic operators and how to use them
+
+Requirements
+Python Scripts
+Allowed editors: vi, vim, emacs
+All your files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.*)
+All your files should end with a new line
+The first line of all your files should be exactly #!/usr/bin/python3
+A README.md file, at the root of the folder of the project, is mandatory
+Your code should use the pycodestyle (version 2.7.*)
+All your files must be executable
+The length of your files will be tested using wc
+
+
+TASK 0
+This program will assign a random signed number to the variable number each time it is executed. Complete the source code in order to print whether the number stored in the variable number is positive or negative.
+
+You can find the source code here
+The variable number will store a different value every time you will run this program
+You don’t have to understand what import, random. randint do. Please do not touch this code
+The output of the program should be:
+The number, followed by
+if the number is greater than 0: is positive
+if the number is 0: is zero
+if the number is less than 0: is negative
+followed by a new line
+
+GitHub repository: holbertonschool-higher_level_programming
+Directory: python-if_else_loops_functions
+File: 0-positive_or_negative.py
