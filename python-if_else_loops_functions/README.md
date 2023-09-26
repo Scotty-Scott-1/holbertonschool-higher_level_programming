@@ -117,3 +117,22 @@ You are not allowed to import any module
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-if_else_loops_functions
 File: 5-print_comb2.py
+
+TASK 6
+Write a program that prints all possible different combinations of two digits.
+
+Numbers must be separated by ,, followed by a space
+The two digits must be different
+01 and 10 are considered the same combination of the two digits 0 and 1
+Print only the smallest combination of two digits
+Numbers should be printed in ascending order, with two digits
+The last number should be followed by a new line
+You can only use no more than 3 print functions with string format
+You can only use no more than 2 loops in your code
+You are not allowed to store numbers or strings in a variable
+You are not allowed to import any module
+
+GitHub repository: holbertonschool-higher_level_programming
+Directory: python-if_else_loops_functions
+File: 6-print_comb3.py
+
