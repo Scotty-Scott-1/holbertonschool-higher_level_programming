@@ -75,3 +75,25 @@ Last but not least, your program should also handle big numbers. And the good ne
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-import_modules
 File: 3-infinite_add.py
+
+TASK 4
+Write a program that prints all the names defined by the compiled module hidden_4.pyc (please download it locally in your sandbox using curl).
+
+You should print one name per line, in alpha order
+You should print only names that do not start with __
+Your code should not be executed when imported
+Make sure you are running your code in Python3.8.x (hidden_4.pyc has been compiled with this version)
+
+GitHub repository: holbertonschool-higher_level_programming
+Directory: python-import_modules
+File: 4-hidden_discovery.py
+
+TASK 5
+Write a program that imports the variable a from the file variable_load_5.py and prints its value.
+
+You are not allowed to use * for importing or __import__
+Your code should not be executed when imported
+
+GitHub repository: holbertonschool-higher_level_programming
+Directory: python-import_modules
+File: 5-variable_load.py
