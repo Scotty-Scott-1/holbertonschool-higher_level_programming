@@ -178,7 +178,7 @@ GitHub repository: holbertonschool-higher_level_programming
 Directory: python-if_else_loops_functions
 File: 9-print_last_digit.py
 
-TASK 9
+TASK 10
 Write a function that adds two integers and returns the result.
 
 Prototype: def add(a, b):
@@ -188,3 +188,14 @@ You are not allowed to import any module
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-if_else_loops_functions
 File: 10-add.py
+
+TASK 11
+Write a function that computes a to the power of b and return the value.
+
+Prototype: def pow(a, b):
+Returns the value of a ^ b
+You are not allowed to import any module
+
+GitHub repository: holbertonschool-higher_level_programming
+Directory: python-if_else_loops_functions
+File: 11-pow.py
