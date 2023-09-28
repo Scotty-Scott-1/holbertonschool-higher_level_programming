@@ -7,4 +7,3 @@ for i in range(97, 123):
         print("{}".format(chr(j - 32)), end="")
     elif j % 2 == 0:
         print("{}".format(chr(j)), end="")
-print()
