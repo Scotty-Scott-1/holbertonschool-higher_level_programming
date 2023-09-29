@@ -5,13 +5,13 @@ from calculator_1 import add, sub, mul, div
 
 if __name__ == "__main__":
 
+    if len(argv) != 4:
+        print("Usage: ./100-my_calculator.py <a> <operator> <b>")
+        exit(1)
+
     op = argv[2]
     a = int(argv[1])
     b = int(argv[3])
-
-    if len(argv) < 4:
-        print("Usage: ./100-my_calculator.py <a> <operator> <b>")
-        exit(1)
 
     if op not in ["+", "-", "*", "/"]:
         print("Unknown operator. Available operators: +, -, * and /")
@@ -31,14 +31,14 @@ if __name__ == "__main__":
             sub(a, b)
         ))
 
-    elif argv[2] == "*":
+    elif op == "*":
         print("{} * {} = {}".format(
             a,
             b,
             mul(a, b)
         ))
 
-    elif argv[2] == "/":
+    elif op == "/":
         print("{} / {} = {}".format(
             a,
             b,
