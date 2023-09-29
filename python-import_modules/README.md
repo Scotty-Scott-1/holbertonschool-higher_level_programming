@@ -122,3 +122,13 @@ Your code should not be executed when imported
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-import_modules
 File: 100-my_calculator.py
+
+TASK 7
+Write a program that prints #pythoniscool, followed by a new line, in the standard output.
+
+Your program should be maximum 2 lines long
+You are not allowed to use print or eval or open or import sys in your file 101-easy_print.py
+
+GitHub repository: holbertonschool-higher_level_programming
+Directory: python-import_modules
+File: 101-easy_print.py
