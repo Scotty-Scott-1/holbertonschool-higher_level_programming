@@ -25,7 +25,7 @@ How to use command line arguments with your Python programs
 ## TASK 0
 
 ### Write a program that imports the function def add(a, b): from the file add_0.py and prints the result of the addition 1 + 2 = 3
-
+```
 - [x] You have to use print function with string format to display integers
 - [x] You have to assign:
 	- [x] The value 1 to a variable called a
@@ -41,6 +41,7 @@ How to use command line arguments with your Python programs
 | --- | --- |
 | Directory: | python-import_modules |
 | File: | 0-add.py |
+```
 
 ## TASK 1
 Write a program that imports functions from the file calculator_1.py, does some Maths, and prints the result.
@@ -53,7 +54,7 @@ and use those two variables only, as arguments when calling functions (including
 a and b must be defined in 2 different lines: a = 10 and another b = 5
 Your program should call each of the imported functions. See example below for format
 the word calculator_1 should be used only once in your file
-You are not allowed to use \* for importing or __import__
+You are not allowed to use \* for importing or \_\_import\_\_
 Your code should not be executed when imported
 
 GitHub repository: holbertonschool-higher_level_programming
