@@ -21,7 +21,7 @@ How to use the built-in function dir()
 How to prevent code in your script from being executed when imported
 How to use command line arguments with your Python programs
 
-TASK 0
+# TASK 0
 Write a program that imports the function def add(a, b): from the file add_0.py and prints the result of the addition 1 + 2 = 3
 
 You have to use print function with string format to display integers
@@ -39,7 +39,7 @@ GitHub repository: holbertonschool-higher_level_programming
 Directory: python-import_modules
 File: 0-add.py
 
-TASK 1
+# TASK 1
 Write a program that imports functions from the file calculator_1.py, does some Maths, and prints the result.
 
 Do not use the function print (with string format to display integers) more than 4 times
@@ -57,7 +57,7 @@ GitHub repository: holbertonschool-higher_level_programming
 Directory: python-import_modules
 File: 1-calculation.py
 
-TASK 2
+# TASK 2
 Write a program that prints the number of and the list of its arguments.
 
 The output should be:
@@ -75,7 +75,7 @@ Directory: python-import_modules
 File: 2-args.py
 
 
-TASK 3
+# TASK 3
 Write a program that prints the result of the addition of all arguments
 
 The output should be the result of the addition of all arguments, followed by a new line
@@ -88,7 +88,7 @@ GitHub repository: holbertonschool-higher_level_programming
 Directory: python-import_modules
 File: 3-infinite_add.py
 
-TASK 4
+# TASK 4
 Write a program that prints all the names defined by the compiled module hidden_4.pyc (please download it locally in your sandbox using curl).
 
 You should print one name per line, in alpha order
@@ -100,7 +100,7 @@ GitHub repository: holbertonschool-higher_level_programming
 Directory: python-import_modules
 File: 4-hidden_discovery.py
 
-TASK 5
+# TASK 5
 Write a program that imports the variable a from the file variable_load_5.py and prints its value.
 
 You are not allowed to use * for importing or __import__
@@ -111,7 +111,7 @@ Directory: python-import_modules
 File: 5-variable_load.py
 
 
-TASK 6
+# TASK 6
 Write a program that imports all functions from the file calculator_1.py and handles basic operations.
 
 Usage: ./100-my_calculator.py a operator b
@@ -135,7 +135,7 @@ GitHub repository: holbertonschool-higher_level_programming
 Directory: python-import_modules
 File: 100-my_calculator.py
 
-TASK 7
+# TASK 7
 Write a program that prints #pythoniscool, followed by a new line, in the standard output.
 
 Your program should be maximum 2 lines long
