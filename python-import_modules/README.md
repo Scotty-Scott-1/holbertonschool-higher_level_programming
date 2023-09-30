@@ -22,26 +22,25 @@ How to use the built-in function dir()
 How to prevent code in your script from being executed when imported
 How to use command line arguments with your Python programs
 
-## TASK 0
+### Task 0
 
-### Write a program that imports the function def add(a, b): from the file add_0.py and prints the result of the addition 1 + 2 = 3
+#### Write a program that imports the function def add(a, b): from the file add_0.py and prints the result of the addition 1 + 2 = 3
 ```
-- [x] You have to use print function with string format to display integers
-- [x] You have to assign:
-	- [x] The value 1 to a variable called a
-	- [x] The value 2 to a variable called b
-- [x] And use those two variables as arguments when calling the functions add and print
-- [x] a and b must be defined in 2 different lines: a = 1 and another b = 2
-- [x] Your program should print: <a value> + <b value> = <add(a, b) value> followed with a new line
-- [x] You can only use the word add_0 once in your code
-- [x] You are not allowed to use \* for importing or __import__
-- [x] Your code should not be executed when imported - by using __import__, like the example below
-
+- You have to use print function with string format to display integers
+- You have to assign:
+- The value 1 to a variable called a
+- The value 2 to a variable called b
+- And use those two variables as arguments when calling the functions add and print
+- a and b must be defined in 2 different lines: a = 1 and another b = 2
+- Your program should print: <a value> + <b value> = <add(a, b) value> followed with a new line
+- You can only use the word add_0 once in your code
+- You are not allowed to use \* for importing or __import__
+- Your code should not be executed when imported - by using __import__, like the example below
+```
 | GitHub repository: | holbertonschool-higher_level_programming |
 | --- | --- |
 | Directory: | python-import_modules |
 | File: | 0-add.py |
-```
 
 ## TASK 1
 Write a program that imports functions from the file calculator_1.py, does some Maths, and prints the result.
