@@ -1,8 +1,9 @@
 # Python Import Modules
 
 ## Table of Contents
-- [Learning Objectives](#Learning Objectives)
-- [TASK 0](#TASK 0)
+- [Learning Objectives](#learning-objectives)
+- [TASK 0](#task-0)
+- [TASK 1](#task-1)
 
 # Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone.
