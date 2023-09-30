@@ -38,7 +38,7 @@ How to use command line arguments with your Python programs
 - [x] Your code should not be executed when imported - by using __import__, like the example below
 
 | GitHub repository: | holbertonschool-higher_level_programming |
-| --- | --- | --- |
+| --- | --- |
 | Directory: | python-import_modules |
 | File: | 0-add.py |
 
