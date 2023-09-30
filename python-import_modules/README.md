@@ -1,4 +1,10 @@
-Learning Objectives
+# Python Import Modules
+
+## Table of Contents
+- [Learning Objectives](#Learning Objectives)
+- [TASK 0](#TASK 0)
+
+# Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone.
 
 Why Python programming is awesome
