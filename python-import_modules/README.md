@@ -34,7 +34,7 @@ How to use command line arguments with your Python programs
 - [x] a and b must be defined in 2 different lines: a = 1 and another b = 2
 - [x] Your program should print: <a value> + <b value> = <add(a, b) value> followed with a new line
 - [x] You can only use the word add_0 once in your code
-- [x] You are not allowed to use * for importing or __import__
+- [x] You are not allowed to use \* for importing or __import__
 - [x] Your code should not be executed when imported - by using __import__, like the example below
 
 | GitHub repository: | holbertonschool-higher_level_programming |
@@ -53,7 +53,7 @@ and use those two variables only, as arguments when calling functions (including
 a and b must be defined in 2 different lines: a = 10 and another b = 5
 Your program should call each of the imported functions. See example below for format
 the word calculator_1 should be used only once in your file
-You are not allowed to use * for importing or __import__
+You are not allowed to use \* for importing or __import__
 Your code should not be executed when imported
 
 GitHub repository: holbertonschool-higher_level_programming
@@ -106,7 +106,7 @@ File: 4-hidden_discovery.py
 ## TASK 5
 Write a program that imports the variable a from the file variable_load_5.py and prints its value.
 
-You are not allowed to use * for importing or __import__
+You are not allowed to use \* for importing or __import__
 Your code should not be executed when imported
 
 GitHub repository: holbertonschool-higher_level_programming
@@ -123,10 +123,10 @@ exit with the value 1
 operator can be:
 + for addition
 - for subtraction
-* for multiplication
+\* for multiplication
 / for division
 If the operator is not one of the above:
-print Unknown operator. Available operators: +, -, * and / followed with a new line
+print Unknown operator. Available operators: +, -, \* and / followed with a new line
 exit with the value 1
 You can cast a and b into integers by using int() (you can assume that all arguments will be castable into integers)
 The result should be printed like this: <a> <operator> <b> = <result>, followed by a new line
