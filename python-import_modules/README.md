@@ -13,7 +13,6 @@
 
 ## Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone.
-
 Why Python programming is awesome
 How to import functions from another file
 How to use imported functions
@@ -23,9 +22,7 @@ How to prevent code in your script from being executed when imported
 How to use command line arguments with your Python programs
 
 ### Task 0
-
 #### Write a program that imports the function def add(a, b): from the file add_0.py and prints the result of the addition 1 + 2 = 3
-```
 - You have to use print function with string format to display integers
 - You have to assign:
 - The value 1 to a variable called a
@@ -36,7 +33,6 @@ How to use command line arguments with your Python programs
 - You can only use the word add_0 once in your code
 - You are not allowed to use \* for importing or __import__
 - Your code should not be executed when imported - by using __import__, like the example below
-```
 | GitHub repository: | holbertonschool-higher_level_programming |
 | --- | --- |
 | Directory: | python-import_modules |
