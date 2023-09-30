@@ -4,7 +4,12 @@
 - [Learning Objectives](#learning-objectives)
 - [TASK 0](#task-0)
 - [TASK 1](#task-1)
-
+- [TASK 2](#task-2)
+- [TASK 3](#task-3)
+- [TASK 4](#task-4)
+- [TASK 5](#task-5)
+- [TASK 6](#task-6)
+- [TASK 7](#task-7)
 # Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone.
 
