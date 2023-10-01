@@ -2,7 +2,7 @@
 
 ## Table of Contents
 - [Learning Objectives](#learning-objectives)
-- [Task 0](#task-0)
+- [Task 0. Import a simple function from a simple file](#task-0-Import-a-simple-function-from-a-simple*file)
 - [Task 1](#task-1)
 - [Task 2](#task-2)
 - [Task 3](#task-3)
@@ -21,7 +21,7 @@ How to use the built-in function dir()
 How to prevent code in your script from being executed when imported
 How to use command line arguments with your Python programs
 
-### Task 0
+### Task 0. Import a simple function from a simple file
 #### Write a program that imports the function def add(a, b): from the file add_0.py and prints the result of the addition 1 + 2 = 3
 - [x] You have to use print function with string format to display integers
 - You have to assign:
@@ -33,10 +33,21 @@ How to use command line arguments with your Python programs
 - [x] You can only use the word add_0 once in your code
 - [x] You are not allowed to use \* for importing or `__import__`
 - [x] Your code should not be executed when imported - by using `__import__`, like the example below
+
+Example:
+```
+guillaume@ubuntu:~/$ ./0-add.py
+1 + 2 = 3
+guillaume@ubuntu:~/$ cat 0-import_add.py
+__import__("0-add")
+guillaume@ubuntu:~/$ python3 0-import_add.py
+guillaume@ubuntu:~/$
+```
 ```
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-import_modules
 File: 0-add.py
+Main file: add_0.py
 ```
 
 ### Task 1
@@ -52,10 +63,20 @@ File: 0-add.py
 - [x] The word calculator_1 should be used only once in your file
 - [x] You are not allowed to use \* for importing or \_\_import\_\_
 - [x] Your code should not be executed when imported
+
+Example:
+```
+guillaume@ubuntu:~/$ ./1-calculation.py
+10 + 5 = 15
+10 - 5 = 5
+10 * 5 = 50
+10 / 5 = 2
+```
 ```
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-import_modules
 File: 1-calculation.py
+Main file: calculator_1.py
 ```
 
 ### TASK 2
@@ -120,10 +141,10 @@ File: 3-infinite_add.py
 ### TASK 4
 #### Write a program that prints all the names defined by the compiled module hidden_4.pyc (please download it locally in your sandbox using curl).
 
-You should print one name per line, in alpha order
-You should print only names that do not start with __
-Your code should not be executed when imported
-Make sure you are running your code in Python3.8.x (hidden_4.pyc has been compiled with this version)
+- [x] You should print one name per line, in alpha order
+- [x] You should print only names that do not start with __
+- [x] Your code should not be executed when imported
+- [x] Make sure you are running your code in Python3.8.x (hidden_4.pyc has been compiled with this version)
 ```
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-import_modules
@@ -133,8 +154,8 @@ File: 4-hidden_discovery.py
 ### TASK 5
 #### Write a program that imports the variable a from the file variable_load_5.py and prints its value.
 
-You are not allowed to use \* for importing or __import__
-Your code should not be executed when imported
+- [x] You are not allowed to use \* for importing or ```__import__```
+- [x] Your code should not be executed when imported
 ```
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-import_modules
@@ -144,21 +165,19 @@ File: 5-variable_load.py
 ### TASK 6
 #### Write a program that imports all functions from the file calculator_1.py and handles basic operations.
 
-Usage: ./100-my_calculator.py a operator b
-If the number of arguments is not 3, your program has to:
-print Usage: ./100-my_calculator.py <a> <operator> <b> followed with a new line
-exit with the value 1
-operator can be:
-+ for addition
-- for subtraction
-\* for multiplication
-/ for division
-If the operator is not one of the above:
-print Unknown operator. Available operators: +, -, \* and / followed with a new line
-exit with the value 1
-You can cast a and b into integers by using int() (you can assume that all arguments will be castable into integers)
-The result should be printed like this: <a> <operator> <b> = <result>, followed by a new line
-You are not allowed to use * for importing or __import__
+- [x] Usage: ./100-my_calculator.py a operator b
+- [x] If the number of arguments is not 3, your program has to:
+- [x] print Usage: ./100-my_calculator.py <a> <operator> <b> followed with a new line
+- [x] exit with the value 1
+- operator can be:
+	- [x] + for addition
+	- [x] - for subtraction
+	- [x] \* for multiplication
+	- [x] / for division
+- [x] If the operator is not one of the above: print Unknown operator. Available operators: +, -, \* and / followed with a new line exit with the value 1
+- [x] You can cast a and b into integers by using int() (you can assume that all arguments will be castable into integers)
+- [x] The result should be printed like this: ```<a> <operator> <b> = <result>```, followed by a new line
+- [x] You are not allowed to use * for importing or ```__import__```
 Your code should not be executed when imported
 ```
 GitHub repository: holbertonschool-higher_level_programming
@@ -169,8 +188,8 @@ File: 100-my_calculator.py
 ### TASK 7
 #### Write a program that prints #pythoniscool, followed by a new line, in the standard output.
 
-Your program should be maximum 2 lines long
-You are not allowed to use print or eval or open or import sys in your file 101-easy_print.py
+- [x] Your program should be maximum 2 lines long
+- [x] You are not allowed to use print or eval or open or import sys in your file 101-easy_print.py
 ```
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-import_modules
