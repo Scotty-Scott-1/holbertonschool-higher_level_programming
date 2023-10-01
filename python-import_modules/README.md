@@ -221,6 +221,7 @@ guillaume@ubuntu:~/$
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-import_modules
 File: 100-my_calculator.py
+Helper module: calculator_1.py
 ```
 
 ### Task 7
@@ -239,4 +240,5 @@ guillaume@ubuntu:~/$
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-import_modules
 File: 101-easy_print.py
+Helper module: test.py
 ```
