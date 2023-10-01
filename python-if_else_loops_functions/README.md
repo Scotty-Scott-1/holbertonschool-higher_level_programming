@@ -6,11 +6,17 @@
 - [Task 1](#task-1) Print the last digit of the number stored in the variable number
 - [Task 2](#task-2) Print the ASCII alphabet, in lowercase, not followed by a new line
 - [Task 3](#task-3) Print all the letters except q and e
-- [Task 4](#task-4) Prints all numbers from 0 to 98 in decimal and in hexadecimal
-- [Task 5](#task-5)
-- [Task 6](#task-6)
-- [Task 7](#task-7)
-
+- [Task 4](#task-4) Print all numbers from 0 to 98 in decimal and in hexadecimal
+- [Task 5](#task-5) Print numbers from 0 to 99.
+- [Task 6](#task-6) Print all possible different combinations of two digits.
+- [Task 7](#task-7) Check for lowercase character.
+- [Task 8](#task-8) Convert and print a string in uppercase
+- [Task 9](#task-9) Print the last digit of a number
+- [Task 10](#task-10) Add two integers and returns the result
+- [Task 11](#task-11) Compute a to the power of b and return the value.
+- [Task 12](#task-12) FizzBuzz
+- [Task 13](#task-13) Print the ASCII alphabet, in reverse order, alternating lowercase and uppercase
+- [Task 14](#task-14) Remove the character at the position n of a string
 
 
 ## Learning Objectives
@@ -332,9 +338,8 @@ File: 10-add.py
 Main file: 10-main.py
 ```
 
-Task 11
-Write a function that computes a to the power of b and return the value.
-
+### Task 11
+#### Write a function that computes a to the power of b and return the value.
 Prototype: def pow(a, b):
 - [x] Returns the value of a ^ b
 - [x] You are not allowed to import any module
@@ -354,39 +359,63 @@ File: 11-pow.py
 Main file: 11-main.py
 ```
 
-TASK 12
-Write a function that prints the numbers from 1 to 100 separated by a space.
+### Task 12
+#### Write a function that prints the numbers from 1 to 100 separated by a space.
+- [x] For multiples of three print Fizz instead of the number and for multiples of five print Buzz.
+- [x] For numbers which are multiples of both three and five print FizzBuzz.
+- [x] Prototype: def fizzbuzz():
+- [x] Each element should be followed by a space
+- [x] You are not allowed to import any module
 
-For multiples of three print Fizz instead of the number and for multiples of five print Buzz.
-For numbers which are multiples of both three and five print FizzBuzz.
-Prototype: def fizzbuzz():
-Each element should be followed by a space
-You are not allowed to import any module
-
+Example:
+```
+guillaume@ubuntu:~/$ ./12-main.py | cat -e
+1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz 11 Fizz 13 14 FizzBuzz 16 17 Fizz 19 Buzz Fizz 22 23 Fizz Buzz 26 Fizz 28 29 FizzBuzz 31 32 Fizz 34 Buzz Fizz 37 38 Fizz Buzz 41 Fizz 43 44 FizzBuzz 46 47 Fizz 49 Buzz Fizz 52 53 Fizz Buzz 56 Fizz 58 59 FizzBuzz 61 62 Fizz 64 Buzz Fizz 67 68 Fizz Buzz 71 Fizz 73 74 FizzBuzz 76 77 Fizz 79 Buzz Fizz 82 83 Fizz Buzz 86 Fizz 88 89 FizzBuzz 91 92 Fizz 94 Buzz Fizz 97 98 Fizz Buzz $
+guillaume@ubuntu:~/$
+```
+```
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-if_else_loops_functions
 File: 12-fizzbuzz.py
+Main file: 12-main.py
+```
 
-TASK 13
-Write a program that prints the ASCII alphabet, in reverse order, alternating lowercase and uppercase (z in lowercase and Y in uppercase) , not followed by a new line.
+### Task 13
+#### Write a program that prints the ASCII alphabet, in reverse order, alternating lowercase and uppercase (z in lowercase and Y in uppercase) , not followed by a new line.
+- [x] You can only use one print function with string format
+- [x] You can only use one loop in your code
+- [x] You are not allowed to store characters in a variable
+- [x] You are not allowed to import any module
 
-You can only use one print function with string format
-You can only use one loop in your code
-You are not allowed to store characters in a variable
-You are not allowed to import any module
-
+Example:
+```
+guillaume@ubuntu:~/$ ./100-print_tebahpla.py
+zYxWvUtSrQpOnMlKjIhGfEdCbAguillaume@ubuntu:~/$
+```
+```
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-if_else_loops_functions
 File: 100-print_tebahpla.py
+```
 
+### Task 14
+#### Write a function that creates a copy of the string, removing the character at the position n (not the Python way, the “C array index”).
+- [x] Prototype: def remove_char_at(str, n):
+- [x] You are not allowed to import any module
 
-TASK 14
-Write a function that creates a copy of the string, removing the character at the position n (not the Python way, the “C array index”).
-
-Prototype: def remove_char_at(str, n):
-You are not allowed to import any module
-You don’t need to understand __import__
-
+Example:
+````
+guillaume@ubuntu:~/$ ./101-main.py
+Bes School
+Chcago
+ is fun!
+School
+Python
+guillaume@ubuntu:~/$
+```
+```
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-if_else_loops_functions
 File: 101-remove_char_at.py
+Main file: 101-main.py
+```
