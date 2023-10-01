@@ -79,7 +79,7 @@ File: 1-calculation.py
 Main file: calculator_1.py
 ```
 
-### TASK 2
+### Task 2
 #### Write a program that prints the number of and the list of its arguments.
 
 The output should be:
@@ -113,7 +113,7 @@ Directory: python-import_modules
 File: 2-args.py
 ```
 
-### TASK 3
+### Task 3
 #### Write a program that prints the result of the addition of all arguments
 
 - [x] The output should be the result of the addition of all arguments, followed by a new line
@@ -138,7 +138,7 @@ Directory: python-import_modules
 File: 3-infinite_add.py
 ```
 
-### TASK 4
+### Task 4
 #### Write a program that prints all the names defined by the compiled module hidden_4.pyc (please download it locally in your sandbox using curl).
 
 - [x] You should print one name per line, in alpha order
@@ -161,7 +161,7 @@ Directory: python-import_modules
 File: 4-hidden_discovery.py
 ```
 
-### TASK 5
+### Task 5
 #### Write a program that imports the variable a from the file variable_load_5.py and prints its value.
 
 - [x] You are not allowed to use \* for importing or ```__import__```
@@ -186,7 +186,7 @@ File: 5-variable_load.py
 Main file: variable_load.py
 ```
 
-### TASK 6
+### Task 6
 #### Write a program that imports all functions from the file calculator_1.py and handles basic operations.
 
 - [x] Usage: ```./100-my_calculator.py <a> <operator> <b>```
@@ -223,7 +223,7 @@ Directory: python-import_modules
 File: 100-my_calculator.py
 ```
 
-### TASK 7
+### Task 7
 #### Write a program that prints #pythoniscool, followed by a new line, in the standard output.
 
 - [x] Your program should be maximum 2 lines long
