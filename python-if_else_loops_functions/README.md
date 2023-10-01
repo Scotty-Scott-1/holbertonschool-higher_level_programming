@@ -5,11 +5,11 @@
 - [Task 0](#task-0) Print whether the number stored in the variable number is positive or negative
 - [Task 1](#task-1) Print the last digit of the number stored in the variable number
 - [Task 2](#task-2) Print the ASCII alphabet, in lowercase, not followed by a new line
-- [Task 3](#task-3) Infinite addition
-- [Task 4](#task-4) Who are you?
-- [Task 5](#task-5) Everything can be imported
-- [Task 6](#task-6) Build my own calculator
-- [Task 7](#task-7) Easy print
+- [Task 3](#task-3) Print all the letters except q and e
+- [Task 4](#task-4)
+- [Task 5](#task-5)
+- [Task 6](#task-6)
+- [Task 7](#task-7)
 
 
 
@@ -30,7 +30,8 @@ Scope of variables
 What’s a traceback
 What are the arithmetic operators and how to use them
 
-### Task 0. Positive anything is better than negative nothing
+### Task 0
+### Positive anything is better than negative nothing
 #### This program will assign a random signed number to the variable number each time it is executed. Complete the source code in order to print whether the number stored in the variable number is positive or negative.
 - [x] The variable number will store a different value every time you will run this program
 - [x] You don’t have to understand what import, random. randint do. Please do not touch this code
@@ -69,7 +70,8 @@ Directory: python-if_else_loops_functions
 File: 0-positive_or_negative.py
 ```
 
-### Task 1. The last digit
+### Task 1
+### The Last Digit
 #### This program will assign a random signed number to the variable number each time it is executed. Complete the source code in order to print the last digit of the number stored in the variable number.
 - [x] The variable number will store a different value every time you will run this program
 - [x] This line should not change: number = random.randint(-10000, 10000)
@@ -135,18 +137,25 @@ File: 2-print_alphabet.py
 ```
 Write a program that prints the ASCII alphabet, in lowercase, not followed by a new line.
 
-TASK 3
-Print all the letters except q and e
-You can only use one print function with string format
-You can only use one loop in your code
-You are not allowed to store characters in a variable
-You are not allowed to import any module
+### Task 3
+### Print all the letters except q and e
+- [x] You can only use one print function with string format
+- [x] You can only use one loop in your code
+- [x] You are not allowed to store characters in a variable
+- [x] You are not allowed to import any module
 
+Example:
+```
+guillaume@ubuntu:~/$ ./3-print_alphabt.py
+abcdfghijklmnoprstuvwxyzguillaume@ubuntu:~/$
+```
+```
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-if_else_loops_functions
 File: 3-print_alphabt.py
+```
 
-TASK 4
+Task 4
 Write a program that prints all numbers from 0 to 98 in decimal and in hexadecimal (as in the following example)
 
 You can only use one print function with string format
