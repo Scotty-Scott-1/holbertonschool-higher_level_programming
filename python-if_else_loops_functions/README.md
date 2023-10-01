@@ -1,7 +1,20 @@
-Learning Objectives
-At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
+# Python - if/else, loops, functions
 
-General
+## Table of Contents
+- [Learning Objectives](#learning-objectives)
+- [Task 0](#task-0) Print whether the number stored in the variable number is positive or negative
+- [Task 1](#task-1) Print the last digit of the number stored in the variable number
+- [Task 2](#task-2) Print the ASCII alphabet, in lowercase, not followed by a new line
+- [Task 3](#task-3) Infinite addition
+- [Task 4](#task-4) Who are you?
+- [Task 5](#task-5) Everything can be imported
+- [Task 6](#task-6) Build my own calculator
+- [Task 7](#task-7) Easy print
+
+
+
+## Learning Objectives
+At the end of this project, you are expected to be able to explain to anyone:
 Why indentation is so important in Python
 How to use the if, if ... else statements
 How to use comments
@@ -17,67 +30,109 @@ Scope of variables
 What’s a traceback
 What are the arithmetic operators and how to use them
 
-Requirements
-Python Scripts
-Allowed editors: vi, vim, emacs
-All your files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.*)
-All your files should end with a new line
-The first line of all your files should be exactly #!/usr/bin/python3
-A README.md file, at the root of the folder of the project, is mandatory
-Your code should use the pycodestyle (version 2.7.*)
-All your files must be executable
-The length of your files will be tested using wc
+### Task 0. Positive anything is better than negative nothing
+#### This program will assign a random signed number to the variable number each time it is executed. Complete the source code in order to print whether the number stored in the variable number is positive or negative.
+- [x] The variable number will store a different value every time you will run this program
+- [x] You don’t have to understand what import, random. randint do. Please do not touch this code
+- The output of the program should be:
+	- [x] `The number`, followed by
+		- [x] if the number is greater than 0: `is positive`
+		- [x] if the number is 0: `is zero`
+		- [x] if the number is less than 0: `is negative`
+		- [x] followed by a new line
 
-
-TASK 0
-This program will assign a random signed number to the variable number each time it is executed. Complete the source code in order to print whether the number stored in the variable number is positive or negative.
-
-You can find the source code here
-The variable number will store a different value every time you will run this program
-You don’t have to understand what import, random. randint do. Please do not touch this code
-The output of the program should be:
-The number, followed by
-if the number is greater than 0: is positive
-if the number is 0: is zero
-if the number is less than 0: is negative
-followed by a new line
-
+Example:
+```
+guillaume@ubuntu:~/$ ./0-positive_or_negative.py
+-4 is negative
+guillaume@ubuntu:~/$ ./0-positive_or_negative.py
+0 is zero
+guillaume@ubuntu:~/$ ./0-positive_or_negative.py
+-3 is negative
+guillaume@ubuntu:~/$ ./0-positive_or_negative.py
+-10 is negative
+guillaume@ubuntu:~/$ ./0-positive_or_negative.py
+10 is positive
+guillaume@ubuntu:~/$ ./0-positive_or_negative.py
+-5 is negative
+guillaume@ubuntu:~/$ ./0-positive_or_negative.py
+6 is positive
+guillaume@ubuntu:~/$ ./0-positive_or_negative.py
+7 is positive
+guillaume@ubuntu:~/$ ./0-positive_or_negative.py
+5 is positive
+guillaume@ubuntu:~/$
+```
+```
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-if_else_loops_functions
 File: 0-positive_or_negative.py
+```
 
+### Task 1. The last digit
+#### This program will assign a random signed number to the variable number each time it is executed. Complete the source code in order to print the last digit of the number stored in the variable number.
+- [x] The variable number will store a different value every time you will run this program
+- [x] This line should not change: number = random.randint(-10000, 10000)
+- The output of the program should be:
+	- [x] The string `Last digit of`
+	- [x] followed by the `<numbe>r`
+	- [x] followed by the string `is`
+	- [x] followed by the `<last digit of number>`
+- followed by
+	- [x] if the last digit is greater than 5: the string `and is greater than 5`
+	- [x] if the last digit is 0: the string `and is 0`
+	- [x] if the last digit is less than 6 and not 0: the string `and is less than 6 and not 0`
+	- [x] followed by a new line
 
-TASK 1
-This program will assign a random signed number to the variable number each time it is executed. Complete the source code in order to print the last digit of the number stored in the variable number.
-
-You can find the source code here
-The variable number will store a different value every time you will run this program
-You don’t have to understand what import, random.randint do. Please do not touch this code. This line should not change: number = random.randint(-10000, 10000)
-The output of the program should be:
-The string Last digit of, followed by
-the number, followed by
-the string is, followed by the last digit of number, followed by
-if the last digit is greater than 5: the string and is greater than 5
-if the last digit is 0: the string and is 0
-if the last digit is less than 6 and not 0: the string and is less than 6 and not 0
-followed by a new line
-
+Example:
+```
+guillaume@ubuntu:~/$ ./1-last_digit.py
+Last digit of 4205 is 5 and is less than 6 and not 0
+guillaume@ubuntu:~/$ ./1-last_digit.py
+Last digit of -626 is -6 and is less than 6 and not 0
+guillaume@ubuntu:~/$ ./1-last_digit.py
+Last digit of 1144 is 4 and is less than 6 and not 0
+guillaume@ubuntu:~/$ ./1-last_digit.py
+Last digit of -9200 is 0 and is 0
+guillaume@ubuntu:~/$ ./1-last_digit.py
+Last digit of 5247 is 7 and is greater than 5
+guillaume@ubuntu:~/$ ./1-last_digit.py
+Last digit of -9318 is -8 and is less than 6 and not 0
+guillaume@ubuntu:~/$ ./1-last_digit.py
+Last digit of 3369 is 9 and is greater than 5
+guillaume@ubuntu:~/$ ./1-last_digit.py
+Last digit of -5224 is -4 and is less than 6 and not 0
+guillaume@ubuntu:~/$ ./1-last_digit.py
+Last digit of -4485 is -5 and is less than 6 and not 0
+guillaume@ubuntu:~/$ ./1-last_digit.py
+Last digit of 3850 is 0 and is 0
+guillaume@ubuntu:~/$ ./1-last_digit.py
+Last digit of 5169 is 9 and is greater than 5
+guillaume@ubuntu:~/$
+```
+```
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-if_else_loops_functions
 File: 1-last_digit.py
+```
 
-TASK 2
-Write a program that prints the ASCII alphabet, in lowercase, not followed by a new line.
+### Task 2
+#### Write a program that prints the ASCII alphabet, in lowercase, not followed by a new line.
+- [x] Use only one print function with string format
+- [x] Use only one loop in your code
+- [x] You are not allowed to store characters in a variable
+- [x] You are not allowed to import any module
 
-Use only one print function with string format
-Use only one loop in your code
-You are not allowed to store characters in a variable
-You are not allowed to import any module
-
+Example:
+```
+guillaume@ubuntu:~/$ ./2-print_alphabet.py
+abcdefghijklmnopqrstuvwxyzguillaume@ubuntu:~/$
+```
+```
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-if_else_loops_functions
 File: 2-print_alphabet.py
-
+```
 Write a program that prints the ASCII alphabet, in lowercase, not followed by a new line.
 
 TASK 3
