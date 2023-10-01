@@ -2,14 +2,14 @@
 
 ## Table of Contents
 - [Learning Objectives](#learning-objectives)
-- [Task 0. Import a simple function from a simple file](#task-0-Import-a-simple-function-from-a-simple*file)
-- [Task 1](#task-1)
-- [Task 2](#task-2)
-- [Task 3](#task-3)
-- [Task 4](#task-4)
-- [Task 5](#task-5)
-- [Task 6](#task-6)
-- [Task 7](#task-7)
+- [Task 0](#task-0) Import a simple function from a simple file
+- [Task 1](#task-1) My first toolbox!
+- [Task 2](#task-2) How to make a script dynamic!
+- [Task 3](#task-3) Infinite addition
+- [Task 4](#task-4) Who are you?
+- [Task 5](#task-5) Everything can be imported
+- [Task 6](#task-6) Build my own calculator
+- [Task 7](#task-7) Easy print
 
 ## Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone.
@@ -145,6 +145,16 @@ File: 3-infinite_add.py
 - [x] You should print only names that do not start with __
 - [x] Your code should not be executed when imported
 - [x] Make sure you are running your code in Python3.8.x (hidden_4.pyc has been compiled with this version)
+
+Example:
+```
+guillaume@ubuntu:~/$ curl -Lso "hidden_4.pyc" "https://github.com/hs-hq/0x02.py/raw/main/hidden_4.pyc"
+guillaume@ubuntu:~/$ ./4-hidden_discovery.py | sort
+my_secret_santa
+print_hidden
+print_school
+guillaume@ubuntu:~/$
+```
 ```
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-import_modules
@@ -156,18 +166,32 @@ File: 4-hidden_discovery.py
 
 - [x] You are not allowed to use \* for importing or ```__import__```
 - [x] Your code should not be executed when imported
+
+Example:
+```
+guillaume@ubuntu:~/$ cat variable_load_5.py
+#!/usr/bin/python3
+a = 98
+"""Simple variable
+"""
+
+guillaume@ubuntu:~/$ ./5-variable_load.py
+98
+guillaume@ubuntu:~/$
+```
 ```
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-import_modules
 File: 5-variable_load.py
+Main file: variable_load.py
 ```
 
 ### TASK 6
 #### Write a program that imports all functions from the file calculator_1.py and handles basic operations.
 
-- [x] Usage: ./100-my_calculator.py a operator b
+- [x] Usage: ```./100-my_calculator.py <a> <operator> <b>```
 - [x] If the number of arguments is not 3, your program has to:
-- [x] print Usage: ./100-my_calculator.py <a> <operator> <b> followed with a new line
+- [x] print Usage: ./100-my_calculator.py ```<a> <operator> <b>``` followed with a new line
 - [x] exit with the value 1
 - operator can be:
 	- [x] + for addition
@@ -179,6 +203,20 @@ File: 5-variable_load.py
 - [x] The result should be printed like this: ```<a> <operator> <b> = <result>```, followed by a new line
 - [x] You are not allowed to use * for importing or ```__import__```
 Your code should not be executed when imported
+
+Example:
+```
+guillaume@ubuntu:~/$ ./100-my_calculator.py ; echo $?
+Usage: ./100-my_calculator.py <a> <operator> <b>
+1
+guillaume@ubuntu:~/$ ./100-my_calculator.py 3 + 5 ; echo $?
+3 + 5 = 8
+0
+guillaume@ubuntu:~/$ ./100-my_calculator.py 3 H 5 ; echo $?
+Unknown operator. Available operators: +, -, * and /
+1
+guillaume@ubuntu:~/$
+```
 ```
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-import_modules
@@ -190,6 +228,13 @@ File: 100-my_calculator.py
 
 - [x] Your program should be maximum 2 lines long
 - [x] You are not allowed to use print or eval or open or import sys in your file 101-easy_print.py
+
+Example:
+```
+guillaume@ubuntu:~/$ ./101-easy_print.py
+#pythoniscool
+guillaume@ubuntu:~/$
+```
 ```
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-import_modules
