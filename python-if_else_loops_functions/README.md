@@ -6,7 +6,7 @@
 - [Task 1](#task-1) Print the last digit of the number stored in the variable number
 - [Task 2](#task-2) Print the ASCII alphabet, in lowercase, not followed by a new line
 - [Task 3](#task-3) Print all the letters except q and e
-- [Task 4](#task-4)
+- [Task 4](#task-4) Prints all numbers from 0 to 98 in decimal and in hexadecimal
 - [Task 5](#task-5)
 - [Task 6](#task-6)
 - [Task 7](#task-7)
@@ -15,20 +15,20 @@
 
 ## Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone:
-Why indentation is so important in Python
-How to use the if, if ... else statements
-How to use comments
-How to affect values to variables
-How to use the while and for loops
-How to use the break and continues statements
-How to use else clauses on loops
-What does the pass statement do, and when to use it
-How to use range
-What is a function and how do you use functions
-What does return a function that does not use any return statement
-Scope of variables
-What’s a traceback
-What are the arithmetic operators and how to use them
+- Why indentation is so important in Python
+- How to use the if, if ... else statements
+- How to use comments
+- How to affect values to variables
+- How to use the while and for loops
+- How to use the break and continues statements
+- How to use else clauses on loops
+- What does the pass statement do, and when to use it
+- How to use range
+- What is a function and how do you use functions
+- What does return a function that does not use any return statement
+- Scope of variables
+- What’s a traceback
+- What are the arithmetic operators and how to use them
 
 ### Task 0
 ### Positive anything is better than negative nothing
@@ -155,34 +155,70 @@ Directory: python-if_else_loops_functions
 File: 3-print_alphabt.py
 ```
 
-Task 4
-Write a program that prints all numbers from 0 to 98 in decimal and in hexadecimal (as in the following example)
+### Task 4
+#### Write a program that prints all numbers from 0 to 98 in decimal and in hexadecimal
+- [x] You can only use one print function with string format
+- [x] You can only use one loop in your code
+- [x] You are not allowed to store numbers or strings in a variable
+- [x] You are not allowed to import any module
 
-You can only use one print function with string format
-You can only use one loop in your code
-You are not allowed to store numbers or strings in a variable
-You are not allowed to import any module
-
+Example:
+```
+guillaume@ubuntu:~/$ ./4-print_hexa.py
+0 = 0x0
+1 = 0x1
+2 = 0x2
+3 = 0x3
+4 = 0x4
+5 = 0x5
+6 = 0x6
+7 = 0x7
+8 = 0x8
+9 = 0x9
+10 = 0xa
+11 = 0xb
+12 = 0xc
+13 = 0xd
+14 = 0xe
+15 = 0xf
+16 = 0x10
+17 = 0x11
+18 = 0x12
+...
+96 = 0x60
+97 = 0x61
+98 = 0x62
+guillaume@ubuntu:~/$
+```
+```
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-if_else_loops_functions
 File: 4-print_hexa.py
+```
 
-TASK 5
-Write a program that prints numbers from 0 to 99.
+### Task 5
+#### Write a program that prints numbers from 0 to 99.
+- [x] Numbers must be separated by `,` followed by a space
+- [x] Numbers should be printed in ascending order, with two digits
+- [x] The last number should be followed by a new line
+- [x] You can only use no more than 2 print functions with string format
+- [x] You can only use one loop in your code
+- [x] You are not allowed to store numbers or strings in a variable
+- [x] You are not allowed to import any module
 
-Numbers must be separated by ,, followed by a space
-Numbers should be printed in ascending order, with two digits
-The last number should be followed by a new line
-You can only use no more than 2 print functions with string format
-You can only use one loop in your code
-You are not allowed to store numbers or strings in a variable
-You are not allowed to import any module
-
+Example:
+```
+guillaume@ubuntu:~/$ ./5-print_comb2.py
+00, 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99
+guillaume@ubuntu:~/$
+```
+```
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-if_else_loops_functions
 File: 5-print_comb2.py
+```
 
-TASK 6
+Task 6
 Write a program that prints all possible different combinations of two digits.
 
 Numbers must be separated by ,, followed by a space
