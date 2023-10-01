@@ -218,87 +218,141 @@ Directory: python-if_else_loops_functions
 File: 5-print_comb2.py
 ```
 
-Task 6
-Write a program that prints all possible different combinations of two digits.
+### Task 6
+#### Write a program that prints all possible different combinations of two digits.
+- [x] Numbers must be separated by `,` followed by a space
+- [x] The two digits must be different
+- [x] 01 and 10 are considered the same combination of the two digits 0 and 1
+- [x] Print only the smallest combination of two digits
+- [x] Numbers should be printed in ascending order, with two digits
+- [x] The last number should be followed by a new line
+- [x] You can only use no more than 3 print functions with string format
+- [x] You can only use no more than 2 loops in your code
+- [x] You are not allowed to store numbers or strings in a variable
+- [x] You are not allowed to import any module
 
-Numbers must be separated by ,, followed by a space
-The two digits must be different
-01 and 10 are considered the same combination of the two digits 0 and 1
-Print only the smallest combination of two digits
-Numbers should be printed in ascending order, with two digits
-The last number should be followed by a new line
-You can only use no more than 3 print functions with string format
-You can only use no more than 2 loops in your code
-You are not allowed to store numbers or strings in a variable
-You are not allowed to import any module
-
+Example:
+```
+guillaume@ubuntu:~/$ ./6-print_comb3.py
+01, 02, 03, 04, 05, 06, 07, 08, 09, 12, 13, 14, 15, 16, 17, 18, 19, 23, 24, 25, 26, 27, 28, 29, 34, 35, 36, 37, 38, 39, 45, 46, 47, 48, 49, 56, 57, 58, 59, 67, 68, 69, 78, 79, 89
+guillaume@ubuntu:~/$
+```
+```
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-if_else_loops_functions
 File: 6-print_comb3.py
+```
 
-
-TASK 7
-Write a function that checks for lowercase character.
-
+### Task 7
+#### Write a function that checks for lowercase character.
 Prototype: def islower(c):
-Returns True if c is lowercase
-Returns False otherwise
-You are not allowed to import any module
-You are not allowed to use str.upper() and str.isupper()
+- [x] Returns True if c is lowercase
+- [x] Returns False otherwise
+- [x] You are not allowed to import any module
+- [x] You are not allowed to use str.upper() and str.isupper()
 Tips: ord()
-You don’t need to understand __import__
 
+Example:
+```
+guillaume@ubuntu:~/$ ./7-main.py
+a is lower
+H is upper
+A is upper
+3 is upper
+g is lower
+guillaume@ubuntu:~/$
+```
+```
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-if_else_loops_functions
 File: 7-islower.py
+Main file: 7-main.py
+```
 
-TASK 8
-Write a function that prints a string in uppercase followed by a new line.
-
+### Task 8
+#### Write a function that prints a string in uppercase followed by a new line.
 Prototype: def uppercase(str):
-You can only use no more than 2 print functions with string format
-You can only use one loop in your code
-You are not allowed to import any module
-You are not allowed to use str.upper() and str.isupper()
+- [x] You can only use no more than 2 print functions with string format
+- [x] You can only use one loop in your code
+- [x] You are not allowed to import any module
+- [x] You are not allowed to use str.upper() and str.isupper()
 Tips: ord()
 
+Example:
+```
+guillaume@ubuntu:~/$ ./8-main.py
+BEST
+BEST SCHOOL 98 BATTERY STREET
+guillaume@ubuntu:~/$
+```
+```
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-if_else_loops_functions
 File: 8-uppercase.py
+Main file: 8-main.py
+```
 
-TASK 9
-Write a function that prints the last digit of a number.
-
+### Task 9
+#### Write a function that prints the last digit of a number.
 Prototype: def print_last_digit(number):
-Returns the value of the last digit
-You are not allowed to import any module
-You don’t need to understand __import__
+- [x] Returns the value of the last digit
+- [x] You are not allowed to import any module
 
+Example:
+```
+guillaume@ubuntu:~/$ ./9-main.py
+8044
+guillaume@ubuntu:~/$
+```
+```
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-if_else_loops_functions
 File: 9-print_last_digit.py
+Main file: 9-main.py
+```
 
-TASK 10
-Write a function that adds two integers and returns the result.
-
+### Task 10
+#### Write a function that adds two integers and returns the result.
 Prototype: def add(a, b):
-Returns the value of a + b
-You are not allowed to import any module
+- [x] Returns the value of a + b
+- [x] You are not allowed to import any module
 
+Example:
+```
+guillaume@ubuntu:~/$ ./10-main.py
+3
+98
+98
+guillaume@ubuntu:~/$
+```
+```
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-if_else_loops_functions
 File: 10-add.py
+Main file: 10-main.py
+```
 
-TASK 11
+Task 11
 Write a function that computes a to the power of b and return the value.
 
 Prototype: def pow(a, b):
-Returns the value of a ^ b
-You are not allowed to import any module
+- [x] Returns the value of a ^ b
+- [x] You are not allowed to import any module
 
+Example:
+```
+guillaume@ubuntu:~/$ ./10-main.py
+3
+98
+98
+guillaume@ubuntu:~/$
+```
+```
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-if_else_loops_functions
 File: 11-pow.py
+Main file: 11-main.py
+```
 
 TASK 12
 Write a function that prints the numbers from 1 to 100 separated by a space.
