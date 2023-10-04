@@ -4,10 +4,10 @@ def best_score(a_dictionary):
 
     if a_dictionary is None or a_dictionary == []:
         return None
+    if not isinstance(a_dictionary, dict):
+        return None
+    
 
     result = max(a_dictionary, key=a_dictionary.get)
-
-    if result == 0:
-        return None
 
     return result
