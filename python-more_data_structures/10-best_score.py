@@ -5,12 +5,6 @@ def best_score(a_dictionary):
     if a_dictionary is None:
         return
 
-    best_name = ""
-    highest_score = -1
+    result = max(a_dictionary, key=a_dictionary.get)
 
-    for name, score in a_dictionary.items():
-        if score > highest_score:
-            highest_score = score
-            best_name = name
-
-    return best_name
+    return result
