@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def weight_average(my_list=[]):
     if len(my_list) == 0:
-        return None
+        return 0
 
     new_list_1 = []
     product_of_tups = 0
