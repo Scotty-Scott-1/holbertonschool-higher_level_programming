@@ -6,7 +6,7 @@
 - [Task 1](#task-1) Secure access to an element in a list
 - [Task 2](#task-2) Replace element
 - [Task 3](#task-3) Print a list of integers... in reverse!
-- [Task 4](#task-4)
+- [Task 4](#task-4) Replace in a copy
 - [Task 5](#task-5)
 - [Task 6](#task-6)
 - [Task 7](#task-7)
@@ -32,13 +32,13 @@ At the end of this project, you are expected to be able to explain to anyone:
 ### Task 0
 Print a list of integers
 
-:warning: Write a function that prints all integers of a list.
-- Prototype: def print_list_integer(my_list=[]):
-- [x] Format: one integer per line. See example
-- [x] You are not allowed to import any module
-- [x] You can assume that the list only contains integers
-- [x] You are not allowed to cast integers into strings
-- [x] You have to use str.format() to print integer
+:dart: Write a function that prints all integers of a list.
+:white_check_mark: Prototype: def print_list_integer(my_list=[]):
+:white_check_mark: Format: one integer per line. See example
+:white_check_mark: You are not allowed to import any module
+:white_check_mark: You can assume that the list only contains integers
+:white_check_mark: You are not allowed to cast integers into strings
+:white_check_mark: You have to use str.format() to print integer
 
 Example:
 ```
@@ -66,12 +66,12 @@ File: 0-print_list_integer.py
 ### Task 1
 Secure access to an element in a list
 
-:warning: Write a function that retrieves an element from a list.
-- [x] Prototype: def element_at(my_list, idx):
-- [x] If idx is negative, the function should return None
-- [x] If idx is out of range (> of number of element in my_list), the function should return None
-- [x] You are not allowed to import any module
-- [x] You are not allowed to use try/except
+:dart: Write a function that retrieves an element from a list.
+:white_check_mark: Prototype: def element_at(my_list, idx):
+:white_check_mark: If idx is negative, the function should return None
+:white_check_mark: If idx is out of range (> of number of element in my_list), the function should return None
+:white_check_mark: You are not allowed to import any module
+:white_check_mark: You are not allowed to use try/except
 
 Example:
 ```
@@ -96,13 +96,13 @@ File: 1-element_at.py
 ### Task 2
 Replace element
 
-:warning: Write a function that replaces an element of a list at a specific position.
-- [x] Prototype: def replace_in_list(my_list, idx, element):
-- [x] If idx is negative, the function should not modify anything, and returns the original list
-- [x] If idx is out of range (> of number of element in my_list), the function should not modify anything, and returns the original list
-- [x] You are not allowed to import any module
-- [x] You are not allowed to use try/except
-- [x] guillaume@ubuntu:~/$ cat 2-main.py
+:dart: Write a function that replaces an element of a list at a specific position.
+:white_check_mark: Prototype: def replace_in_list(my_list, idx, element):
+:white_check_mark:  If idx is negative, the function should not modify anything, and returns the original list
+:white_check_mark:  If idx is out of range (> of number of element in my_list), the function should not modify anything, and returns the original list
+:white_check_mark:  You are not allowed to import any module
+:white_check_mark:  You are not allowed to use try/except
+:white_check_mark:  guillaume@ubuntu:~/$ cat 2-main.py
 
 Example:
 ```
@@ -131,13 +131,13 @@ File: 2-replace_in_list.py
 ### Task 3
 Print a list of integers... in reverse!
 
-:warning: Write a function that prints all integers of a list, in reverse order.
-- [x] Prototype: def print_reversed_list_integer(my_list=[]):
-- [x] Format: one integer per line. See example
-- [x] You are not allowed to import any module
-- [x] You can assume that the list only contains integers
-- [x] You are not allowed to cast integers into strings
-- [x] You have to use str.format() to print integers
+:dart: Write a function that prints all integers of a list, in reverse order.
+:white_check_mark:  Prototype: def print_reversed_list_integer(my_list=[]):
+:white_check_mark:  Format: one integer per line. See example
+:white_check_mark:  You are not allowed to import any module
+:white_check_mark:  You can assume that the list only contains integers
+:white_check_mark:  You are not allowed to cast integers into strings
+:white_check_mark:  You have to use str.format() to print integers
 
 Example:
 ```
@@ -160,4 +160,39 @@ guillaume@ubuntu:~/$
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-data_structures
 File: 3-print_reversed_list_integer.py
+```
+
+### Task 4
+Replace in a copy
+
+:dart: Write a function that replaces an element in a list at a specific position without modifying the original list.
+:white_check_mark: Prototype: def new_in_list(my_list, idx, element):
+:white_check_mark: If idx is negative, the function should return a copy of the original list
+:white_check_mark: If idx is out of range (> of number of element in my_list), the function should return a copy of the original list
+:white_check_mark: You are not allowed to import any module
+:white_check_mark: You are not allowed to use try/except
+
+Example:
+```
+guillaume@ubuntu:~/$ cat 4-main.py
+#!/usr/bin/python3
+new_in_list = __import__('4-new_in_list').new_in_list
+
+my_list = [1, 2, 3, 4, 5]
+idx = 3
+new_element = 9
+new_list = new_in_list(my_list, idx, new_element)
+
+print(new_list)
+print(my_list)
+
+guillaume@ubuntu:~/$ ./4-main.py
+[1, 2, 3, 9, 5]
+[1, 2, 3, 4, 5]
+guillaume@ubuntu:~/$
+```
+```
+GitHub repository: holbertonschool-higher_level_programming
+Directory: python-data_structures
+File: 4-new_in_list.py
 ```
