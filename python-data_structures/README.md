@@ -5,7 +5,7 @@
 - [Task 0](#task-0) Print a list of integers
 - [Task 1](#task-1) Secure access to an element in a list
 - [Task 2](#task-2) Replace element
-- [Task 3](#task-3)
+- [Task 3](#task-3) Print a list of integers... in reverse!
 - [Task 4](#task-4)
 - [Task 5](#task-5)
 - [Task 6](#task-6)
@@ -30,8 +30,9 @@ At the end of this project, you are expected to be able to explain to anyone:
 
 
 ### Task 0
-### Print a list of integers
-#### Write a function that prints all integers of a list.
+Print a list of integers
+
+[!IMPORTANT]Write a function that prints all integers of a list.
 - Prototype: def print_list_integer(my_list=[]):
 - [x] Format: one integer per line. See example
 - [x] You are not allowed to import any module
@@ -63,9 +64,9 @@ File: 0-print_list_integer.py
 ```
 
 ### Task 1
-### Secure access to an element in a list
-#### Write a function that retrieves an element from a list.
+Secure access to an element in a list
 
+[!IMPORTANT]Write a function that retrieves an element from a list.
 - [x] Prototype: def element_at(my_list, idx):
 - [x] If idx is negative, the function should return None
 - [x] If idx is out of range (> of number of element in my_list), the function should return None
@@ -93,9 +94,9 @@ File: 1-element_at.py
 ```
 
 ### Task 2
-### Replace element
-#### Write a function that replaces an element of a list at a specific position.
+Replace element
 
+[!IMPORTANT]Write a function that replaces an element of a list at a specific position.
 - [x] Prototype: def replace_in_list(my_list, idx, element):
 - [x] If idx is negative, the function should not modify anything, and returns the original list
 - [x] If idx is out of range (> of number of element in my_list), the function should not modify anything, and returns the original list
@@ -128,9 +129,9 @@ File: 2-replace_in_list.py
 ```
 
 ### Task 3
-### Print a list of integers... in reverse!
-#### Write a function that prints all integers of a list, in reverse order.
+Print a list of integers... in reverse!
 
+[!IMPORTANT]Write a function that prints all integers of a list, in reverse order.
 - [x] Prototype: def print_reversed_list_integer(my_list=[]):
 - [x] Format: one integer per line. See example
 - [x] You are not allowed to import any module
@@ -139,7 +140,7 @@ File: 2-replace_in_list.py
 - [x] You have to use str.format() to print integers
 
 Example:
-``
+```
 guillaume@ubuntu:~/$ cat 3-main.py
 #!/usr/bin/python3
 print_reversed_list_integer = __import__('3-print_reversed_list_integer').print_reversed_list_integer
@@ -154,9 +155,9 @@ guillaume@ubuntu:~/$ ./3-main.py
 2
 1
 guillaume@ubuntu:~/$
-``
-``
+```
+```
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-data_structures
 File: 3-print_reversed_list_integer.py
-``
+```
