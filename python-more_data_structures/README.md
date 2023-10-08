@@ -560,7 +560,8 @@ Squared by using map
 :white_check_mark: `matrix` is a 2 dimensional array<br>
 :arrow_heading_down: Returns a new matrix:<br>
 :white_check_mark: Same size as `matrix`<br>
-:white_check_mark: Each value should be the square of the value of the input :arrow_heading_up:<br>
+:white_check_mark: Each value should be the square of the value of the input<br>
+:arrow_heading_up:<br>
 :white_check_mark: Initial matrix should not be modified<br>
 :white_check_mark: You are not allowed to import any module<br>
 :white_check_mark: You have to use `map`<br>
