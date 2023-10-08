@@ -41,7 +41,7 @@ Squared simple
 :dart: Write a function that computes the square value of all integers of a matrix.<br>
 :white_check_mark: Prototype: `def square_matrix_simple(matrix=[]):`<br>
 :white_check_mark: `matrix` is a 2 dimensional array<br>
-:ballot_box_with_check: Returns a new matrix:<br>
+:arrow_lower_right: Returns a new matrix:<br>
 :white_check_mark:Same size as `matrix`.<br>
 :white_check_mark: Each value should be the square of the value of the input<br>
 :arrow_upper_left:<br>
