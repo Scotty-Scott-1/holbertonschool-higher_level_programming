@@ -41,10 +41,9 @@ Squared simple
 :dart: Write a function that computes the square value of all integers of a matrix.<br>
 :white_check_mark: Prototype: `def square_matrix_simple(matrix=[]):`<br>
 :white_check_mark: `matrix` is a 2 dimensional array<br>
-:arrow_lower_right: Returns a new matrix:<br>
+:arrow_heading_down: Returns a new matrix:<br>
 :white_check_mark:Same size as `matrix`.<br>
-:white_check_mark: Each value should be the square of the value of the input<br>
-:arrow_upper_left:<br>
+:white_check_mark: Each value should be the square of the value of the input :arrow_heading_up:<br>
 :white_check_mark: Initial matrix should not be modified<br>
 :white_check_mark: You are not allowed to import any module<br>
 :white_check_mark: You are allowed to use regular loops, `map`, etc.<br>
@@ -445,10 +444,9 @@ Multiply by using map
 
 :dart: Write a function that returns a list with all values multiplied by a number without using any loops.<br>
 :white_check_mark: Prototype: `def multiply_list_map(my_list=[], number=0):`<br>
-:arrow_lower_right: Returns a new list:<br>
+:arrow_heading_down: Returns a new list:<br>
 :white_check_mark: Same length as my_list<br>
-:white_check_mark: Each value should be multiplied by number<br>
-:arrow_upper_left:<br>
+:white_check_mark: Each value should be multiplied by number :arrow_heading_up:<br>
 :white_check_mark: Initial list should not be modified<br>
 :white_check_mark: You are not allowed to import any module<br>
 :white_check_mark: You have to use map<br>
@@ -525,7 +523,7 @@ Directory: python-more_data_structures
 File: 12-roman_to_int.py
 ```
 
-Task 13
+### Task 13
 Weighted average!
 
 :dart: Write a function that returns the weighted average of all integers tuple `(<score>, <weight>)`<br>
@@ -560,10 +558,9 @@ Squared by using map
 :dart: Write a function that computes the square value of all integers of a matrix using `map`<br>
 :white_check_mark: Prototype: `def square_matrix_map(matrix=[]):`<br>
 :white_check_mark: `matrix` is a 2 dimensional array<br>
-:arrow_lower_right: Returns a new matrix:<br>
+:arrow_heading_down: Returns a new matrix:<br>
 :white_check_mark: Same size as `matrix`<br>
-:white_check_mark: Each value should be the square of the value of the input<br>
-:arrow_upper_left:<br>
+:white_check_mark: Each value should be the square of the value of the input :arrow_heading_up:<br>
 :white_check_mark: Initial matrix should not be modified<br>
 :white_check_mark: You are not allowed to import any module<br>
 :white_check_mark: You have to use `map`<br>
