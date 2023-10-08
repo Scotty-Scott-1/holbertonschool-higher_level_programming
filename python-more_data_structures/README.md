@@ -4,18 +4,19 @@
 - [Learning Objectives](#learning-objectives)
 - [Task 0](#task-0) Squared simple
 - [Task 1](#task-1) Search and replace
-- [Task 2](#task-2)
-- [Task 3](#task-3)
-- [Task 4](#task-4)
-- [Task 5](#task-5)
-- [Task 6](#task-6)
-- [Task 7](#task-7)
-- [Task 8](#task-8)
-- [Task 9](#task-9)
-- [Task 10](#task-10)
-- [Task 11](#task-11)
-- [Task 12](#task-12)
-
+- [Task 2](#task-2) Unique addition
+- [Task 3](#task-3) Present in both
+- [Task 4](#task-4) Only differents
+- [Task 5](#task-5) Number of keys
+- [Task 6](#task-6) Print sorted dictionary
+- [Task 7](#task-7) Update dictionary
+- [Task 8](#task-8) Simple delete by key
+- [Task 9](#task-9) Multiply by 2
+- [Task 10](#task-10) Best score
+- [Task 11](#task-11) Multiply by using map
+- [Task 12](#task-12) Roman to Integer
+- [Task 13](#task-11) Weighted average!
+- [Task 14](#task-12) Squared by using map
 
 
 ## Learning Objectives
@@ -38,12 +39,12 @@ At the end of this project, you are expected to be able to explain to anyone:
 Squared simple
 
 :dart: Write a function that computes the square value of all integers of a matrix.<br>
-:white_check_mark:Prototype: `def square_matrix_simple(matrix=[]):`<br>
+:white_check_mark: Prototype: `def square_matrix_simple(matrix=[]):`<br>
 :white_check_mark: `matrix` is a 2 dimensional array<br>
-- Returns a new matrix:
-:white_check_mark:Same size as `matrix`.
+:ballot_box_with_check: Returns a new matrix:<br>
+:white_check_mark:Same size as `matrix`.<br>
 :white_check_mark: Each value should be the square of the value of the input<br>
-
+:arrow_upper_left:<br>
 :white_check_mark: Initial matrix should not be modified<br>
 :white_check_mark:You are not allowed to import any module<br>
 :white_check_mark:You are allowed to use regular loops, `map`, etc.<br>
@@ -79,10 +80,10 @@ File: 0-square_matrix_simple.py
 Search and replace
 
 :dart:Write a function that replaces all occurrences of an element by another in a new list.<br>
-Prototype: `def search_replace(my_list, search, replace):`<br>
-`my_list` is the initial list<br>
-`search` is the element to replace in the list<br>
-`replace` is the new element<br>
+:white_check_mark: Prototype: `def search_replace(my_list, search, replace):`<br>
+:white_check_mark: `my_list` is the initial list<br>
+:white_check_mark: `search` is the element to replace in the list<br>
+:white_check_mark: `replace` is the new element<br>
 :white_check_mark: You are not allowed to import any module<br>
 
 Example:
@@ -135,12 +136,15 @@ Directory: python-more_data_structures
 File: 2-uniq_add.py
 ```
 
-3. Present in both
-mandatory
-Write a function that returns a set of common elements in two sets.
+### Task 3
+Present in both
 
-Prototype: def common_elements(set_1, set_2):
-You are not allowed to import any module
+:dart: Write a function that returns a set of common elements in two sets.<br>
+:white_check_mark: Prototype: `def common_elements(set_1, set_2):`<br>
+:white_check_mark: You are not allowed to import any module<br>
+
+Example:
+```
 guillaume@ubuntu:~/$ cat 3-main.py
 #!/usr/bin/python3
 common_elements = __import__('3-common_elements').common_elements
@@ -153,19 +157,22 @@ print(sorted(list(c_set)))
 guillaume@ubuntu:~/$ ./3-main.py
 ['C']
 guillaume@ubuntu:~/$
-Repo:
-
+```
+```
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-more_data_structures
 File: 3-common_elements.py
+```
 
-13/13 pts
-4. Only differents
-mandatory
-Write a function that returns a set of all elements present in only one set.
+### Task 4
+Only differents
 
-Prototype: def only_diff_elements(set_1, set_2):
-You are not allowed to import any module
+:dart: Write a function that returns a set of all elements present in only one set.<br>
+:white_check_mark: Prototype: def only_diff_elements(set_1, set_2):<br>
+:white_check_mark: You are not allowed to import any module<br>
+
+Eaxmple:
+```
 guillaume@ubuntu:~/$ cat 4-main.py
 #!/usr/bin/python3
 only_diff_elements = __import__('4-only_diff_elements').only_diff_elements
@@ -178,19 +185,22 @@ print(sorted(list(od_set)))
 guillaume@ubuntu:~/$ ./4-main.py
 ['Bash', 'Javascript', 'Perl', 'Python', 'Ruby']
 guillaume@ubuntu:~/$
-Repo:
-
+```
+```
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-more_data_structures
 File: 4-only_diff_elements.py
+```
 
-13/13 pts
-5. Number of keys
-mandatory
-Write a function that returns the number of keys in a dictionary.
+### Task 5
+Number of keys
 
-Prototype: def number_keys(a_dictionary):
-You are not allowed to import any module
+:dart: Write a function that returns the number of keys in a dictionary.<br>
+:white_check_mark: Prototype: `def number_keys(a_dictionary):`<br>
+:white_check_mark: You are not allowed to import any module<br>
+
+Example:
+```
 guillaume@ubuntu:~/$ cat 5-main.py
 #!/usr/bin/python3
 number_keys = __import__('5-number_keys').number_keys
@@ -202,23 +212,26 @@ print("Number of keys: {:d}".format(nb_keys))
 guillaume@ubuntu:~/$ ./5-main.py
 Number of keys: 3
 guillaume@ubuntu:~/$
-Repo:
-
+```
+```
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-more_data_structures
 File: 5-number_keys.py
+```
 
-9/9 pts
-6. Print sorted dictionary
-mandatory
-Write a function that prints a dictionary by ordered keys.
+### Task 6
+Print sorted dictionary
 
-Prototype: def print_sorted_dictionary(a_dictionary):
-You can assume that all keys are strings
-Keys should be sorted by alphabetic order
-Only sort keys of the first level (don’t sort keys of a dictionary inside the main dictionary)
-Dictionary values can have any type
-You are not allowed to import any module
+:dart: Write a function that prints a dictionary by ordered keys.<br>
+:white_check_mark: `Prototype: def print_sorted_dictionary(a_dictionary):`<br>
+:white_check_mark: You can assume that all keys are strings<br>
+:white_check_mark: Keys should be sorted by alphabetic order<br>
+:white_check_mark: Only sort keys of the first level (don’t sort keys of a dictionary inside the main dictionary)<br>
+:white_check_mark: Dictionary values can have any type<br>
+:white_check_mark: You are not allowed to import any module<br>
+
+Example:
+```
 guillaume@ubuntu:~/$ cat 6-main.py
 #!/usr/bin/python3
 print_sorted_dictionary = __import__('6-print_sorted_dictionary').print_sorted_dictionary
@@ -232,23 +245,24 @@ ids: [1, 2, 3]
 language: C
 track: Low level
 guillaume@ubuntu:~/$
-Repo:
-
+```
+```
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-more_data_structures
 File: 6-print_sorted_dictionary.py
+```
 
-9/9 pts
-7. Update dictionary
-mandatory
-Write a function that replaces or adds key/value in a dictionary.
+### Task 7
+Update dictionary
 
-Prototype: def update_dictionary(a_dictionary, key, value):
-key argument will be always a string
-value argument will be any type
-If a key exists in the dictionary, the value will be replaced
-If a key doesn’t exist in the dictionary, it will be created
-You are not allowed to import any module
+:dart: Write a function that replaces or adds key/value in a dictionary.<br>
+:white_check_mark: Prototype: `def update_dictionary(a_dictionary, key, value):`<br>
+:white_check_mark: `key` argument will be always a string<br>
+:white_check_mark: `value` argument will be any type<br>
+:white_check_mark: If a key exists in the dictionary, the value will be replaced<br>
+:white_check_mark: If a key doesn’t exist in the dictionary, it will be created<br>
+:white_check_mark: You are not allowed to import any module<br>
+```
 guillaume@ubuntu:~/$ cat 7-main.py
 #!/usr/bin/python3
 update_dictionary = __import__('7-update_dictionary').update_dictionary
@@ -288,21 +302,22 @@ language: Python
 number: 89
 track: Low level
 guillaume@ubuntu:~/$
-Repo:
-
+```
+```
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-more_data_structures
 File: 7-update_dictionary.py
+```
+### Task 8
+Simple delete by key
 
-11/11 pts
-8. Simple delete by key
-mandatory
-Write a function that deletes a key in a dictionary.
-
-Prototype: def simple_delete(a_dictionary, key=""):
-key argument will be always a string
-If a key doesn’t exist, the dictionary won’t change
-You are not allowed to import any module
+:dart: Write a function that deletes a key in a dictionary.<br>
+:white_check_mark: Prototype: `def simple_delete(a_dictionary, key="")`<br>
+:white_check_mark: `key` argument will be always a string<br>
+:white_check_mark: If a key doesn’t exist, the dictionary won’t change<br>
+:white_check_mark: You are not allowed to import any module<br>
+```
+Example:
 guillaume@ubuntu:~/$ cat 8-main.py
 #!/usr/bin/python3
 simple_delete = __import__('8-simple_delete').simple_delete
@@ -340,22 +355,26 @@ Number: 89
 ids: [1, 2, 3]
 language: C
 guillaume@ubuntu:~/$
-Repo:
-
+```
+```
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-more_data_structures
 File: 8-simple_delete.py
+```
 
-9/9 pts
-9. Multiply by 2
-mandatory
-Write a function that returns a new dictionary with all values multiplied by 2
+### Task 9
+Multiply by 2
 
-Prototype: def multiply_by_2(a_dictionary):
-You can assume that all values are only integers
-Returns a new dictionary
-You are not allowed to import any module
+:dart: Write a function that returns a new dictionary with all values multiplied by 2<br>
+:white_check_mark: Prototype: `def multiply_by_2(a_dictionary):`<br>
+:white_check_mark: You can assume that all values are only integers<br>
+:white_check_mark: Returns a new dictionary<br>
+:white_check_mark: You are not allowed to import any module<br>
+
+Example:
+```
 guillaume@ubuntu:~/$ cat 9-main.py
+
 #!/usr/bin/python3
 multiply_by_2 = __import__('9-multiply_by_2').multiply_by_2
 print_sorted_dictionary = \
@@ -380,22 +399,25 @@ John: 24
 Mike: 28
 Molly: 32
 guillaume@ubuntu:~/$
-Repo:
-
+```
+```
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-more_data_structures
 File: 9-multiply_by_2.py
+```
 
-9/9 pts
-10. Best score
-mandatory
-Write a function that returns a key with the biggest integer value.
+### Task 10
+Best score
 
-Prototype: def best_score(a_dictionary):
-You can assume that all values are only integers
-If no score found, return None
-You can assume all students have a different score
-You are not allowed to import any module
+:dart: Write a function that returns a key with the biggest integer value.<br>
+:white_check_mark: Prototype: `def best_score(a_dictionary):`<br>
+:white_check_mark: You can assume that all values are only integers<br>
+:white_check_mark: If no score found, return `None`<br>
+:white_check_mark: You can assume all students have a different score<br>
+:white_check_mark: You are not allowed to import any module<br>
+
+Example:
+```
 guillaume@ubuntu:~/$ cat 10-main.py
 #!/usr/bin/python3
 best_score = __import__('10-best_score').best_score
@@ -411,25 +433,28 @@ guillaume@ubuntu:~/$ ./10-main.py
 Best score: Molly
 Best score: None
 guillaume@ubuntu:~/$
-Repo:
-
+```
+```
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-more_data_structures
 File: 10-best_score.py
+```
 
-10/10 pts
-11. Multiply by using map
-mandatory
-Write a function that returns a list with all values multiplied by a number without using any loops.
+### Task 11
+Multiply by using map
 
-Prototype: def multiply_list_map(my_list=[], number=0):
-Returns a new list:
-Same length as my_list
-Each value should be multiplied by number
-Initial list should not be modified
-You are not allowed to import any module
-You have to use map
-Your file should be max 3 lines
+:dart: Write a function that returns a list with all values multiplied by a number without using any loops.<br>
+:white_check_mark: Prototype: `def multiply_list_map(my_list=[], number=0):`<br>
+:ballot_box_with_check: Returns a new list:<br>
+:white_check_mark: Same length as my_list<br>
+:white_check_mark: Each value should be multiplied by number<br>
+:white_check_mark: Initial list should not be modified<br>
+:white_check_mark: You are not allowed to import any module<br>
+:white_check_mark: You have to use map<br>
+:white_check_mark: Your file should be max 3 lines<br>
+
+Example:
+```
 guillaume@ubuntu:~/$ cat 11-main.py
 #!/usr/bin/python3
 multiply_list_map = __import__('11-multiply_list_map').multiply_list_map
@@ -443,24 +468,27 @@ guillaume@ubuntu:~/$ ./11-main.py
 [4, 8, 12, 16, 24]
 [1, 2, 3, 4, 6]
 guillaume@ubuntu:~/$
-Repo:
-
+```
+```
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-more_data_structures
 File: 11-multiply_list_map.py
+```
 
-11/11 pts
-12. Roman to Integer
-mandatory
+### Task 12
+Roman to Integer
+```
 Technical interview preparation:
-
 You are not allowed to google anything
 Whiteboard first
-Create a function def roman_to_int(roman_string): that converts a Roman numeral to an integer.
+```
+:dart: Create a function `def roman_to_int(roman_string):` that converts a Roman numeral to an integer.<br>
+:white_check_mark: You can assume the number will be between 1 to 3999.<br>
+:white_check_mark:`def roman_to_int(roman_string)` must return an integer<br>
+:white_check_mark: If the `roman_string` is not a string or `None`, return `0`<br>
 
-You can assume the number will be between 1 to 3999.
-def roman_to_int(roman_string) must return an integer
-If the roman_string is not a string or None, return 0
+Example:
+```
 guillaume@ubuntu:~/$ cat 12-main.py
 #!/usr/bin/python3
 """ Roman to Integer test file
@@ -489,20 +517,23 @@ IX = 9
 LXXXVII = 87
 DCCVII = 707
 guillaume@ubuntu:~/$
-Repo:
-
+```
+```
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-more_data_structures
 File: 12-roman_to_int.py
+```
 
-10/10 pts
-13. Weighted average!
-#advanced
-Write a function that returns the weighted average of all integers tuple (<score>, <weight>)
+Task 13
+Weighted average!
 
-Prototype: def weight_average(my_list=[]):
-Returns 0 if the list is empty
-You are not allowed to import any module
+:dart: Write a function that returns the weighted average of all integers tuple `(<score>, <weight>)`<br>
+:white_check_mark: Prototype: `def weight_average(my_list=[]):`<br>
+:white_check_mark: Returns `0` if the list is empty<br>
+:white_check_mark: You are not allowed to import any module<br>
+
+Example:
+```
 guillaume@ubuntu:~/$ cat 100-main.py
 #!/usr/bin/python3
 weight_average = __import__('100-weight_average').weight_average
@@ -515,27 +546,31 @@ print("Average: {:0.2f}".format(result))
 guillaume@ubuntu:~/$ ./100-main.py
 Average: 2.80
 guillaume@ubuntu:~/$
-Repo:
-
+```
+```
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-more_data_structures
 File: 100-weight_average.py
+```
 
-11/11 pts
-14. Squared by using map
-#advanced
-Write a function that computes the square value of all integers of a matrix using map
+### Task 14
+Squared by using map
 
-Prototype: def square_matrix_map(matrix=[]):
-matrix is a 2 dimensional array
-Returns a new matrix:
-Same size as matrix
-Each value should be the square of the value of the input
-Initial matrix should not be modified
-You are not allowed to import any module
-You have to use map
-You are not allowed to use for or while
-Your file should be max 3 lines
+:dart: Write a function that computes the square value of all integers of a matrix using `map`<br>
+:white_check_mark: Prototype: `def square_matrix_map(matrix=[]):`<br>
+:white_check_mark: `matrix` is a 2 dimensional array<br>
+:arrow_lower_right: Returns a new matrix:<br>
+:white_check_mark: Same size as `matrix`<br>
+:white_check_mark: Each value should be the square of the value of the input<br>
+:arrow_upper_left:<br>
+:white_check_mark: Initial matrix should not be modified<br>
+:white_check_mark: You are not allowed to import any module<br>
+:white_check_mark: You have to use `map`<br>
+:white_check_mark: You are not allowed to use `for` or `while`<br>
+:white_check_mark: Your file should be max 3 lines<br>
+
+Example:
+```
 guillaume@ubuntu:~/$ cat 101-main.py
 #!/usr/bin/python3
 square_matrix_map = \
@@ -555,8 +590,9 @@ guillaume@ubuntu:~/$ ./101-main.py
 [[1, 4, 9], [16, 25, 36], [49, 64, 81]]
 [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 guillaume@ubuntu:~/$
-Repo:
-
+```
+```
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-more_data_structures
 File: 101-square_matrix_map.py
+```
