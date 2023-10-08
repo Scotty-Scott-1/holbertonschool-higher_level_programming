@@ -46,8 +46,8 @@ Squared simple
 :white_check_mark: Each value should be the square of the value of the input<br>
 :arrow_upper_left:<br>
 :white_check_mark: Initial matrix should not be modified<br>
-:white_check_mark:You are not allowed to import any module<br>
-:white_check_mark:You are allowed to use regular loops, `map`, etc.<br>
+:white_check_mark: You are not allowed to import any module<br>
+:white_check_mark: You are allowed to use regular loops, `map`, etc.<br>
 
 Example:
 ```
@@ -113,7 +113,7 @@ File: 1-search_replace.py
 Unique addition
 
 :dart: Write a function that adds all unique integers in a list (only once for each integer).<br>
-:white_check_mark: `Prototype: def uniq_add(my_list=[]):`<br
+:white_check_mark: `Prototype: def uniq_add(my_list=[]):`<br>
 :white_check_mark: You are not allowed to import any module<br>
 
 Example:
@@ -445,9 +445,10 @@ Multiply by using map
 
 :dart: Write a function that returns a list with all values multiplied by a number without using any loops.<br>
 :white_check_mark: Prototype: `def multiply_list_map(my_list=[], number=0):`<br>
-:ballot_box_with_check: Returns a new list:<br>
+:arrow_lower_right: Returns a new list:<br>
 :white_check_mark: Same length as my_list<br>
 :white_check_mark: Each value should be multiplied by number<br>
+:arrow_lower_left:<br>
 :white_check_mark: Initial list should not be modified<br>
 :white_check_mark: You are not allowed to import any module<br>
 :white_check_mark: You have to use map<br>
