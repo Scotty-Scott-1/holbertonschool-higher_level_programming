@@ -2,8 +2,8 @@
 
 ## Table of Contents
 - [Learning Objectives](#learning-objectives)
-- [Task 0](#task-0)
-- [Task 1](#task-1)
+- [Task 0](#task-0) Squared simple
+- [Task 1](#task-1) Search and replace
 - [Task 2](#task-2)
 - [Task 3](#task-3)
 - [Task 4](#task-4)
@@ -37,15 +37,15 @@ At the end of this project, you are expected to be able to explain to anyone:
 ### Task 0
 Squared simple
 
-:dart: Write a function that computes the square value of all integers of a matrix.
-:white_check_mark:Prototype: `def square_matrix_simple(matrix=[]):`
-:white_check_mark: `matrix` is a 2 dimensional array
-- [x] Returns a new matrix:
-	:white_check_mark:Same size as `matrix`
-	:white_check_mark:Each value should be the square of the value of the input
-:white_check_mark: Initial matrix should not be modified
-:white_check_mark:You are not allowed to import any module
-:white_check_mark:You are allowed to use regular loops, `map`, etc.
+:dart: Write a function that computes the square value of all integers of a matrix.<br>
+:white_check_mark:Prototype: `def square_matrix_simple(matrix=[]):`<br>
+:white_check_mark: `matrix` is a 2 dimensional array<br>
+- [x] Returns a new matrix:<br>
+	:white_check_mark:Same size as `matrix`<br>
+	:white_check_mark:Each value should be the square of the value of the input<br>
+:white_check_mark: Initial matrix should not be modified<br>
+:white_check_mark:You are not allowed to import any module<br>
+:white_check_mark:You are allowed to use regular loops, `map`, etc.<br>
 
 Example:
 ```
@@ -77,12 +77,12 @@ File: 0-square_matrix_simple.py
 ### Task 1
 Search and replace
 
-:dart:Write a function that replaces all occurrences of an element by another in a new list.
-Prototype: `def search_replace(my_list, search, replace):`
-`my_list` is the initial list
-`search` is the element to replace in the list
-`replace` is the new element
-:white_check_mark: You are not allowed to import any module
+:dart:Write a function that replaces all occurrences of an element by another in a new list.<br>
+Prototype: `def search_replace(my_list, search, replace):`<br>
+`my_list` is the initial list<br>
+`search` is the element to replace in the list<br>
+`replace` is the new element<br>
+:white_check_mark: You are not allowed to import any module<br>
 
 Example:
 ```
@@ -106,13 +106,16 @@ GitHub repository: holbertonschool-higher_level_programming
 Directory: python-more_data_structures
 File: 1-search_replace.py
 ```
-11/11 pts
-2. Unique addition
-mandatory
-Write a function that adds all unique integers in a list (only once for each integer).
 
-Prototype: def uniq_add(my_list=[]):
-You are not allowed to import any module
+### Task 2.
+Unique addition
+
+:dart: Write a function that adds all unique integers in a list (only once for each integer).<br>
+:white_check_mark: `Prototype: def uniq_add(my_list=[]):`<br
+:white_check_mark: You are not allowed to import any module<br>
+
+Example:
+```
 guillaume@ubuntu:~/$ cat 2-main.py
 #!/usr/bin/python3
 uniq_add = __import__('2-uniq_add').uniq_add
@@ -124,13 +127,13 @@ print("Result: {:d}".format(result))
 guillaume@ubuntu:~/$ ./2-main.py
 Result: 15
 guillaume@ubuntu:~/$
-Repo:
-
+```
+```
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-more_data_structures
 File: 2-uniq_add.py
+```
 
-13/13 pts
 3. Present in both
 mandatory
 Write a function that returns a set of common elements in two sets.
