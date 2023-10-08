@@ -217,9 +217,9 @@ Divide a list
 :white_check_mark: If 2 elements can’t be divided, the division result should be equal to 0<br>
 :white_check_mark: If an element is not an integer or float: print: `wrong type`<br>
 :white_check_mark: If the division can’t be done (`/0`): print: `division by 0`<br>
-If `my_list_1` or `my_list_2` is too short print: `out of range`<br>
-You have to use `try: / except: / finally:`<br>
-You are not allowed to import any module<br>
+:white_check_mark: If `my_list_1` or `my_list_2` is too short print: `out of range`<br>
+:white_check_mark: You have to use `try: / except: / finally:`<br>
+:white_check_mark: You are not allowed to import any module<br>
 
 Example:
 ```
