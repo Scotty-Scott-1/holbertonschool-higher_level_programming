@@ -448,7 +448,7 @@ Multiply by using map
 :arrow_lower_right: Returns a new list:<br>
 :white_check_mark: Same length as my_list<br>
 :white_check_mark: Each value should be multiplied by number<br>
-:arrow_lower_left:<br>
+:arrow_upper_left:<br>
 :white_check_mark: Initial list should not be modified<br>
 :white_check_mark: You are not allowed to import any module<br>
 :white_check_mark: You have to use map<br>
