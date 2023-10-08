@@ -277,15 +277,15 @@ File: 6-print_matrix_integer.py
 ### Task 7
 Tuples addition
 
-:dart: Write a function that adds 2 tuples.
-:white_check_mark: Prototype: `def add_tuple(tuple_a=(), tuple_b=()):`
-:white_check_mark: Returns a tuple with 2 integers:
-:white_check_mark: The first element should be the addition of the first element of each argument
-:white_check_mark: The second element should be the addition of the second element of each argument
-:white_check_mark: You are not allowed to import any module
-:white_check_mark: You can assume that the two tuples will only contain integers
-:white_check_mark: If `a tuple` is smaller than 2, use the value `0` for each missing integer
-:white_check_mark: If `a tuple` is bigger than 2, use only the first 2 integers
+:dart: Write a function that adds 2 tuples.<br>
+:white_check_mark: Prototype: `def add_tuple(tuple_a=(), tuple_b=()):`<br>
+:white_check_mark: Returns a tuple with 2 integers:<br>
+:white_check_mark: The first element should be the addition of the first element of each argument<br>
+:white_check_mark: The second element should be the addition of the second element of each argument<br>
+:white_check_mark: You are not allowed to import any module<br>
+:white_check_mark: You can assume that the two tuples will only contain integers<br>
+:white_check_mark: If `a tuple` is smaller than 2, use the value `0` for each missing integer<br>
+:white_check_mark: If `a tuple` is bigger than 2, use only the first 2 integers<br>
 
 Example:
 ```
@@ -317,10 +317,10 @@ File: 7-add_tuple.py
 ### Task 8
 More returns!
 
-:dart: Write a function that returns a tuple with the length of a string and its first character.
-:white_check_mark: Prototype: `def multiple_returns(sentence):`
-:white_check_mark: If the sentence is empty, the first character should be equal to `None`
-:white_check_mark: You are not allowed to import any module
+:dart: Write a function that returns a tuple with the length of a string and its first character.<br>
+:white_check_mark: Prototype: `def multiple_returns(sentence):`<br>
+:white_check_mark: If the sentence is empty, the first character should be equal to `None`<br>
+:white_check_mark: You are not allowed to import any module<br>
 
 Example:
 ```
@@ -346,12 +346,12 @@ File: 8-multiple_returns.py`
 ### Task 9
 Find the max
 
-:dart: Write a function that finds the biggest integer of a list.
-:white_check_mark: Prototype: `def max_integer(my_list=[]):`
-:white_check_mark: If the list is empty, return `None`
-:white_check_mark: You can assume that the list only contains integers
-:white_check_mark: You are not allowed to import any module
-:white_check_mark: You are not allowed to use the builtin `max()`
+:dart: Write a function that finds the biggest integer of a list.<br>
+:white_check_mark: Prototype: `def max_integer(my_list=[]):`<br>
+:white_check_mark: If the list is empty, return `None`<br>
+:white_check_mark: You can assume that the list only contains integers<br>
+:white_check_mark: You are not allowed to import any module<br>
+:white_check_mark: You are not allowed to use the builtin `max()`<br>
 
 Example:
 ```
@@ -377,10 +377,10 @@ File: 9-max_integer.py
 Only by 2
 :dart: Write a function that finds all multiples of 2 in a list.
 
-:white_check_mark: Prototype: `def divisible_by_2(my_list=[]):`
-:white_check_mark: Return a new list with `True` or `False`, depending on whether the integer at the same position in the original list is a multiple of 2
-:white_check_mark: The new list should have the same size as the original list
-:white_check_mark: You are not allowed to import any module
+:white_check_mark: Prototype: `def divisible_by_2(my_list=[]):`<br>
+:white_check_mark: Return a new list with `True` or `False`, depending on whether the integer at the same position in the original list is a multiple of 2<br>
+:white_check_mark: The new list should have the same size as the original list<br>
+:white_check_mark: You are not allowed to import any module<br>
 
 Example:
 ```
@@ -415,11 +415,11 @@ File: 10-divisible_by_2.py
 ### Task 11
 Delete at
 
-:dart: Write a function that deletes the item at a specific position in a list.
-:white_check_mark: Prototype: `def delete_at(my_list=[], idx=0):`
-:white_check_mark: If `idx` is negative or out of range, nothing change (returns the same list)
-:white_check_mark: You are not allowed to use `pop()`
-:white_check_mark: You are not allowed to import any module
+:dart: Write a function that deletes the item at a specific position in a list.<br>
+:white_check_mark: Prototype: `def delete_at(my_list=[], idx=0):`<br>
+:white_check_mark: If `idx` is negative or out of range, nothing change (returns the same list)<br>
+:white_check_mark: You are not allowed to use `pop()`<br>
+:white_check_mark: You are not allowed to import any module<br>
 
 Example:
 ```
@@ -447,10 +447,10 @@ File: 11-delete_at.py
 ### Task 12
 Switch
 
-:dart: Complete the source code in order to switch value of `a` and `b`
-:dart: You can find the source code below
-:white_check_mark: Your code should be inserted where the comment is (line 4)
-:white_check_mark: Your program should be exactly 5 lines long
+:dart: Complete the source code in order to switch value of `a` and `b`<br>
+:dart: You can find the source code below<br>
+:white_check_mark: Your code should be inserted where the comment is (line 4)<br>
+:white_check_mark: Your program should be exactly 5 lines long<br>
 
 Source code:
 ```
