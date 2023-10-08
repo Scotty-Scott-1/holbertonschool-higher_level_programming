@@ -38,14 +38,14 @@ At the end of this project, you are expected to be able to explain to anyone:
 Squared simple
 
 :dart: Write a function that computes the square value of all integers of a matrix.
-- [x] Prototype: `def square_matrix_simple(matrix=[]):`
-- [x] `matrix` is a 2 dimensional array
-- Returns a new matrix:
-	- [x] Same size as `matrix`
-	- [x] Each value should be the square of the value of the input
-- [x] Initial matrix should not be modified
-- [x] You are not allowed to import any module
-- [x] You are allowed to use regular loops, `map`, etc.
+:white_check_mark:Prototype: `def square_matrix_simple(matrix=[]):`
+:white_check_mark: `matrix` is a 2 dimensional array
+- [x] Returns a new matrix:
+	:white_check_mark:Same size as `matrix`
+	:white_check_mark:Each value should be the square of the value of the input
+:white_check_mark: Initial matrix should not be modified
+:white_check_mark:You are not allowed to import any module
+:white_check_mark:You are allowed to use regular loops, `map`, etc.
 
 Example:
 ```
@@ -73,16 +73,19 @@ GitHub repository: holbertonschool-higher_level_programming
 Directory: python-more_data_structures
 File: 0-square_matrix_simple.py
 ```
-11/11 pts
-1. Search and replace
-mandatory
-Write a function that replaces all occurrences of an element by another in a new list.
 
-Prototype: def search_replace(my_list, search, replace):
-my_list is the initial list
-search is the element to replace in the list
-replace is the new element
-You are not allowed to import any module
+### Task 1
+Search and replace
+
+:dart:Write a function that replaces all occurrences of an element by another in a new list.
+Prototype: `def search_replace(my_list, search, replace):`
+`my_list` is the initial list
+`search` is the element to replace in the list
+`replace` is the new element
+:white_check_mark: You are not allowed to import any module
+
+Example:
+```
 guillaume@ubuntu:~/$ cat 1-main.py
 #!/usr/bin/python3
 search_replace = __import__('1-search_replace').search_replace
@@ -97,12 +100,12 @@ guillaume@ubuntu:~/$ ./1-main.py
 [1, 89, 3, 4, 5, 4, 89, 1, 1, 4, 89]
 [1, 2, 3, 4, 5, 4, 2, 1, 1, 4, 89]
 guillaume@ubuntu:~/$
-Repo:
-
+```
+```
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-more_data_structures
 File: 1-search_replace.py
-
+```
 11/11 pts
 2. Unique addition
 mandatory
