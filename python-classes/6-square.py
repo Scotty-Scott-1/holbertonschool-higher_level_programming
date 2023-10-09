@@ -14,8 +14,8 @@ class Square:
         Args:
         size (int): size of the square. Called and set by setter and getter
         """
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     @property
     def size(self):
@@ -45,16 +45,18 @@ class Square:
     @position.setter
     def position(self, value):
         if (
-            isinstance(value, tuple)
-            and len(value) == 2
-            and isinstance(value[0], int)
-            and isinstance(value[1], int)
-            and value[0] >= 0
-            and value[1] >= 0
+            not isinstance(value, tuple)
+            or len(value) != 2
+            or not isinstance(value[0], int)
+            or not isinstance(value[1], int)
         ):
-            self.__position = value
-        else:
             raise TypeError("position must be a tuple of 2 positive integers")
+        elif value[0] < 0:
+            raise TypeError("position must be a tuple of 2 positive integers")
+        elif value[1] < 0:
+            raise TypeError("position must be a tuple of 2 positive integers")
+        else:
+            self.__position = value
 
     def area(self):
         """ A method that returns the area of a sqaure object"""
