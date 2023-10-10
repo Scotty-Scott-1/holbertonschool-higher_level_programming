@@ -1,14 +1,14 @@
 #!/usr/bin/python3
+"""
+A function that adds two ints after error checking
+    a: an int or float
+    b: an int of float
+"""
+
+
 def add_integer(a, b=98):
     """a function that error checks and adds 2 ints
-
-    Args:
-        a: an int of float
-        b: an int of float
-
-    Return:
-        Typecasted a + b
-
+    Return: sum of two ints
     """
     if not isinstance(a, int) and not isinstance(a, float):
         raise TypeError("a must be an integer")
