@@ -1,0 +1,37 @@
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+>>> text_indentation("hi")
+hi
+
+>>> text_indentation("hi.")
+hi.
+<BLANKLINE>
+
+>>> text_indentation(1)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+
+>>> text_indentation("hi.?: hi")
+hi.
+<BLANKLINE>
+?
+<BLANKLINE>
+:
+<BLANKLINE>
+hi
+
+>>> text_indentation("hi. you")
+hi.
+<BLANKLINE>
+you
+
+>>> text_indentation("hello.   ")
+hello.
+<BLANKLINE>
+
+>>> text_indentation("   hi")
+hi
+
+>>> text_indentation("      ")
+
