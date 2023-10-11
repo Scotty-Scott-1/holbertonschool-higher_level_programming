@@ -3,8 +3,9 @@
 >>> add_integer(1, 1)
 2
 
->>> add_integer(2, 2)
-4
+>>> add_integer((None, None), 2)
+Traceback (most recent call last):
+TypeError: a must be an integer
 
 >>> add_integer("1", 8)
 Traceback (most recent call last):
@@ -17,13 +18,16 @@ TypeError: a must be an integer
 Traceback (most recent call last):
 TypeError: a must be an integer
 
->>> add_integer([], 5)
+>>> add_integer(5,[])
 Traceback (most recent call last):
-TypeError: a must be an integer
+TypeError: b must be an integer
 
 
 >>> add_integer(-2, -2)
 -4
 
->>> add_integer(0, 0)
-0
+>>> add_integer((1,1), 0)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+
