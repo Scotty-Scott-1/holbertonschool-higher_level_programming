@@ -57,3 +57,15 @@ TypeError: a must be an integer
 
 >>> add_integer(2, -2)
 0
+
+>>> add_integer(0, 0)
+0
+
+>>> add_integer(-2.2, -2.2)
+-4
+
+>>> add_integer(-2.2, 2.2)
+0
+
+>>> add_integer(2, 2.2)
+4
