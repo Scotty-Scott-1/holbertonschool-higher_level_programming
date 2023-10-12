@@ -62,7 +62,7 @@ class Rectangle:
         new_string = ""
 
         if self.height == 0 or self.width == 0:
-            return
+            return new_string
 
         for i in range(self.height):
             for j in range(self.width):
