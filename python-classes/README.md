@@ -118,6 +118,7 @@ Size validation
 :white_check_mark: Instantiation with optional `size`: `def __init__(self, size=0)`:<br>
 - `size` must be an integer, otherwise raise a `TypeError` exception with the message `size must be an integer`<br>
 - if `size` is less than `0`, raise a `ValueError` exception with the message `size must be >= 0`<br>
+
 :white_check_mark: You are not allowed to import any module<br>
 
 Example:
@@ -184,6 +185,7 @@ Area of a square
 :white_check_mark: Instantiation with optional `size: def __init__(self, size=0):`<br>
 - `size` must be an integer, otherwise raise a `TypeError` exception with the message `size must be an integer`<br>
 - if `size` is less than `0`, raise a `ValueErro`r exception with the message `size must be >= 0`<br>
+
 :white_check_mark: Public instance method: `def area(self):` that returns the current square area<br>
 :white_check_mark: You are not allowed to import any module<br>
 
@@ -352,13 +354,13 @@ Coordinates of a square
 - property setter `def position(self, value):` to set it:<br>
 	- `position` must be a tuple of 2 positive integers, otherwise raise a `TypeError` exception with the message `position must be a tuple of 2 positive integers`<br>
 
-:white_check_mark: Instantiation with optional `size` and optional `position: def __init__(self, size=0, position=(0, 0))`:
-:white_check_mark: Public instance method: `def area(self):` that returns the current square area
-:white_check_mark: Public instance method: `def my_print(self):` that prints in stdout the square with the character `#`:
-- if `size` is equal to 0, print an empty line
-- `position` should be use by using space - Don’t fill lines by spaces when `position[1] > 0`
+:white_check_mark: Instantiation with optional `size` and optional `position: def __init__(self, size=0, position=(0, 0))`:<br>
+:white_check_mark: Public instance method: `def area(self):` that returns the current square area<br>
+:white_check_mark: Public instance method: `def my_print(self):` that prints in stdout the square with the character `#`:<br>
+- if `size` is equal to 0, print an empty line<br>
+- `position` should be use by using space - Don’t fill lines by spaces when `position[1] > 0`<br>
 
-:white_check_mark: You are not allowed to import any module
+:white_check_mark: You are not allowed to import any module<br>
 
 Example:
 ```
