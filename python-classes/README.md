@@ -38,8 +38,8 @@ At the end of this project, you are expected to be able to explain to anyone:
 ### Task 0
 My first square
 
-:dart: Write an empty class Square that defines a square:
-:white_check_mark: You are not allowed to import any module
+:dart: Write an empty class `Square` that defines a square:<br>
+:white_check_mark: You are not allowed to import any module<br>
 
 Example:
 ```
@@ -65,12 +65,12 @@ File: 0-square.py
 ### Task 1
 Square with size
 
-:dart: Write a class Square that defines a square by: (based on 0-square.py)
-:white_check_mark: Private instance attribute: size
-:white_check_mark: Instantiation with size (no type/value verification)
-:white_check_mark: You are not allowed to import any module
+:dart: Write a class `Square` that defines a square by: (based on `0-square.py`)<br>
+:white_check_mark: Private instance attribute: `size`<br>
+:white_check_mark: Instantiation with `size` (no type/value verification)<br>
+:white_check_mark: You are not allowed to import any module<br>
 
-Why size is private attribute?
+Why `size` is private attribute?
 
 The size of a square is crucial for a square, many things depend of it (area computation, etc.), so you, as class builder, must control the type and value of this attribute. One way to have the control is to keep it privately. You will see in next tasks how to get, update and validate the size value.
 
@@ -110,12 +110,14 @@ File: 1-square.py
 ### Task 2
 Size validation
 
-:dart: Write a class Square that defines a square by: (based on 1-square.py)
-:white_check_mark: Private instance attribute: size
-:white_check_mark: Instantiation with optional size: def __init__(self, size=0):
-:white_check_mark: size must be an integer, otherwise raise a TypeError exception with the message size must be an integer
-:white_check_mark: if size is less than 0, raise a ValueError exception with the message size must be >= 0
-:white_check_mark: You are not allowed to import any module
+:dart: Write a class `Square` that defines a square by: (based on `1-square.py`)<br>
+:white_check_mark: Private instance attribute: `size`<br>
+
+:white_check_mark: Instantiation with optional `size`: `def __init__(self, size=0)`:<br>
+:white_check_mark: `size` must be an integer, otherwise raise a `TypeError` exception with the message `size must be an integer`<br>
+:white_check_mark: if `size` is less than `0`, raise a `ValueError` exception with the message `size must be >= 0`<br>
+
+:white_check_mark: You are not allowed to import any module<br>
 
 Example:
 ```
