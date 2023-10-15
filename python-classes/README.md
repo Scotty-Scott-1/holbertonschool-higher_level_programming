@@ -115,11 +115,9 @@ Size validation
 :dart: Write a class `Square` that defines a square by: (based on `1-square.py`)<br>
 
 :white_check_mark: Private instance attribute: `size`<br>
-
 :white_check_mark: Instantiation with optional `size`: `def __init__(self, size=0)`:<br>
 - `size` must be an integer, otherwise raise a `TypeError` exception with the message `size must be an integer`<br>
 - if `size` is less than `0`, raise a `ValueError` exception with the message `size must be >= 0`<br>
-
 :white_check_mark: You are not allowed to import any module<br>
 
 Example:
@@ -183,11 +181,9 @@ Area of a square
 :dart: Write a class `Square` that defines a square by: (based on `2-square.py`)<br>
 
 :white_check_mark: Private instance attribute: `size`
-
 :white_check_mark: Instantiation with optional `size: def __init__(self, size=0):`<br>
 - `size` must be an integer, otherwise raise a `TypeError` exception with the message `size must be an integer`<br>
 - if `size` is less than `0`, raise a `ValueErro`r exception with the message `size must be >= 0`<br>
-
 :white_check_mark: Public instance method: `def area(self):` that returns the current square area<br>
 :white_check_mark: You are not allowed to import any module<br>
 
@@ -236,7 +232,6 @@ Access and update private attribute
 - property setter `def size(self, value):` to set it:<br>
 	- `size` must be an integer, otherwise raise a `TypeError` exception with the message `size must be an integer`<br>
 	- if `size` is less than `0`, raise a `ValueError` exception with the message `size must be >= 0`<br>
-
 :white_check_mark: Instantiation with optional `size: def __init__(self, size=0):`<br>
 :white_check_mark: Public instance method: `def area(self):` that returns the current square area<br>
 :white_check_mark: You are not allowed to import any module<br>
@@ -285,13 +280,10 @@ Printing a square
 - property setter `def size(self, value):` to set it:<br>
 	- `size` must be an integer, otherwise raise a `TypeError` exception with the message `size must be an integer`<br>
 	- if `size` is less than `0`, raise a `ValueError` exception with the message `size must be >= 0`<br>
-
 :white_check_mark: Instantiation with optional `size: def __init__(self, size=0):`<br>
 :white_check_mark: Public instance method: `def area(self):` that returns the current square area<br>
-
 :white_check_mark: Public instance method: `def my_print(self):` that prints in stdout the square with the character `#`:<br>
 - if `size` is equal to 0, print an empty line<br>
-
 :white_check_mark: You are not allowed to import any module<br>
 
 Example:
@@ -351,19 +343,15 @@ Coordinates of a square
 - property setter `def size(self, value):` to set it:<br>
 	- `size` must be an integer, otherwise raise a `TypeError` exception with the message `size must be an integer`<br>
 	- if `size` is less than 0, raise a `ValueError` exception with the message `size must be >= 0`<br>
-
-- [x] Private instance attribute: `position:`<br>
-	- property `def position(self):` to retrieve it<br>
-	- property setter `def position(self, value):` to set it:<br>
-		- `position` must be a tuple of 2 positive integers, otherwise raise a `TypeError` exception with the message `position must be a tuple of 2 positive integers`<br>
-
+:white_check_mark: Private instance attribute: `position:`<br>
+- property `def position(self):` to retrieve it<br>
+- property setter `def position(self, value):` to set it:<br>
+	- `position` must be a tuple of 2 positive integers, otherwise raise a `TypeError` exception with the message `position must be a tuple of 2 positive integers`<br>
 :white_check_mark: Instantiation with optional `size` and optional `position: def __init__(self, size=0, position=(0, 0))`:
 :white_check_mark: Public instance method: `def area(self):` that returns the current square area
-
-- [x] Public instance method: `def my_print(self):` that prints in stdout the square with the character `#`:
-	- if `size` is equal to 0, print an empty line
-	- `position` should be use by using space - Don’t fill lines by spaces when `position[1] > 0`
-
+:white_check_mark: Public instance method: `def my_print(self):` that prints in stdout the square with the character `#`:
+- if `size` is equal to 0, print an empty line
+- `position` should be use by using space - Don’t fill lines by spaces when `position[1] > 0`
 :white_check_mark: You are not allowed to import any module
 
 Example:
