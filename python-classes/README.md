@@ -39,6 +39,7 @@ At the end of this project, you are expected to be able to explain to anyone:
 My first square
 
 :dart: Write an empty class `Square` that defines a square:<br>
+
 :white_check_mark: You are not allowed to import any module<br>
 
 Example:
@@ -66,6 +67,7 @@ File: 0-square.py
 Square with size
 
 :dart: Write a class `Square` that defines a square by: (based on `0-square.py`)<br>
+
 :white_check_mark: Private instance attribute: `size`<br>
 :white_check_mark: Instantiation with `size` (no type/value verification)<br>
 :white_check_mark: You are not allowed to import any module<br>
@@ -111,6 +113,7 @@ File: 1-square.py
 Size validation
 
 :dart: Write a class `Square` that defines a square by: (based on `1-square.py`)<br>
+
 :white_check_mark: Private instance attribute: `size`<br>
 
 :white_check_mark: Instantiation with optional `size`: `def __init__(self, size=0)`:<br>
@@ -177,13 +180,16 @@ File: 2-square.py
 ### Task 3
 Area of a square
 
-:dart: Write a class Square that defines a square by: (based on 2-square.py)
-:white_check_mark: Private instance attribute: size
-:white_check_mark: Instantiation with optional size: def __init__(self, size=0):
-:white_check_mark: size must be an integer, otherwise raise a TypeError exception with the message size must be an integer
-:white_check_mark: if size is less than 0, raise a ValueError exception with the message size must be >= 0
-:white_check_mark: Public instance method: def area(self): that returns the current square area
-:white_check_mark: You are not allowed to import any module
+:dart: Write a class `Square` that defines a square by: (based on `2-square.py`)<br>
+
+:white_check_mark: Private instance attribute: `size`
+
+:white_check_mark: Instantiation with optional `size: def __init__(self, size=0):`<br>
+:white_check_mark: `size` must be an integer, otherwise raise a `TypeError` exception with the message `size must be an integer`<br>
+:white_check_mark: if `size` is less than `0`, raise a `ValueErro`r exception with the message `size must be >= 0`<br>
+
+:white_check_mark: Public instance method: `def area(self):` that returns the current square area<br>
+:white_check_mark: You are not allowed to import any module<br>
 
 Example:
 ```
@@ -223,19 +229,22 @@ File: 3-square.py
 ### Task 4
 Access and update private attribute
 
-:dart: Write a class Square that defines a square by: (based on 3-square.py)
-:white_check_mark: Private instance attribute: size:
-:white_check_mark: property def size(self): to retrieve it
-:white_check_mark: property setter def size(self, value): to set it:
-:white_check_mark: size must be an integer, otherwise raise a TypeError exception with the message size must be an integer
-:white_check_mark: if size is less than 0, raise a ValueError exception with the message size must be >= 0
-:white_check_mark: Instantiation with optional size: def __init__(self, size=0):
-:white_check_mark: Public instance method: def area(self): that returns the current square area
-:white_check_mark: You are not allowed to import any module
+:dart: Write a class `Square` that defines a square by: (based on `3-square.py`)<br>
+
+:white_check_mark: Private instance attribute: `size:`<br>
+:white_check_mark: property `def size(self):` to retrieve it<br>
+
+:white_check_mark: property setter `def size(self, value):` to set it:<br>
+:white_check_mark: `size` must be an integer, otherwise raise a `TypeError` exception with the message `size must be an integer`<br>
+:white_check_mark: if `size` is less than `0`, raise a `ValueError` exception with the message `size must be >= 0`<br>
+
+:white_check_mark: Instantiation with optional `size: def __init__(self, size=0):`<br>
+:white_check_mark: Public instance method: `def area(self):` that returns the current square area<br>
+:white_check_mark: You are not allowed to import any module<br>
 
 Why a getter and setter?
 
-Reminder: size is a private attribute. We did that to make sure we control the type and value. Getter and setter methods are not 100% Python, but more OOP. With them, you will be able to validate the assignment of a private attribute and also define how getting the attribute value will be available from outside - by copy? by assignment? etc. Also, adding type/value validation in the setter will centralize the logic, since you will do it in only one place.
+Reminder: `size` is a private attribute. We did that to make sure we control the type and value. Getter and setter methods are not 100% Python, but more OOP. With them, you will be able to validate the assignment of a private attribute and also define how getting the attribute value will be available from outside - by copy? by assignment? etc. Also, adding type/value validation in the setter will centralize the logic, since you will do it in only one place.
 
 Example:
 ```
@@ -270,17 +279,22 @@ File: 4-square.py
 ### Task 5
 Printing a square
 
-:dart: Write a class Square that defines a square by: (based on 4-square.py)
-:white_check_mark: Private instance attribute: size:
-:white_check_mark: property def size(self): to retrieve it
-:white_check_mark: property setter def size(self, value): to set it:
-:white_check_mark: size must be an integer, otherwise raise a TypeError exception with the message size must be an integer
-:white_check_mark: if size is less than 0, raise a ValueError exception with the message size must be >= 0
-:white_check_mark: Instantiation with optional size: def __init__(self, size=0):
-:white_check_mark: Public instance method: def area(self): that returns the current square area
-:white_check_mark: Public instance method: def my_print(self): that prints in stdout the square with the character #:
-:white_check_mark: if size is equal to 0, print an empty line
-:white_check_mark: You are not allowed to import any module
+:dart: Write a class `Square` that defines a square by: (based on `4-square.py`)<br>
+
+:white_check_mark: Private instance attribute: `size:`<br>
+:white_check_mark: property `def size(self):` to retrieve it<br>
+
+:white_check_mark: property setter `def size(self, value):` to set it:<br>
+:white_check_mark: `size` must be an integer, otherwise raise a `TypeError` exception with the message `size must be an integer`<br>
+:white_check_mark: if `size` is less than `0`, raise a `ValueError` exception with the message `size must be >= 0`<br>
+
+:white_check_mark: Instantiation with optional `size: def __init__(self, size=0):`<br>
+:white_check_mark: Public instance method: `def area(self):` that returns the current square area<br>
+
+:white_check_mark: Public instance method: `def my_print(self):` that prints in stdout the square with the character `#`:<br>
+:white_check_mark: if `size` is equal to 0, print an empty line<br>
+
+:white_check_mark: You are not allowed to import any module<br>
 
 Example:
 ```
@@ -332,16 +346,19 @@ File: 5-square.py
 ### Task 6
 Coordinates of a square
 
-:dart: Write a class Square that defines a square by: (based on 5-square.py)
-:white_check_mark: Private instance attribute: size:
-:white_check_mark: property def size(self): to retrieve it
-:white_check_mark: property setter def size(self, value): to set it:
-:white_check_mark: size must be an integer, otherwise raise a TypeError exception with the message size must be an integer
-:white_check_mark: if size is less than 0, raise a ValueError exception with the message size must be >= 0
-:white_check_mark: Private instance attribute: position:
-:white_check_mark: property def position(self): to retrieve it
-:white_check_mark: property setter def position(self, value): to set it:
-:white_check_mark: position must be a tuple of 2 positive integers, otherwise raise a TypeError exception with the message position must be a tuple of 2 positive integers
+:dart: Write a class `Square` that defines a square by: (based on `5-square.py`)
+
+:white_check_mark: Private instance attribute: `size:`<br>
+- property `def size(self):` to retrieve it<br>
+- property setter `def size(self, value):` to set it:<br>
+	- `size` must be an integer, otherwise raise a `TypeError` exception with the message `size must be an integer`<br>
+	- if `size` is less than 0, raise a `ValueError` exception with the message `size must be >= 0`<br>
+
+:white_check_mark: Private instance attribute: `position:`<br>
+- property `def position(self):` to retrieve it<br>
+- property setter `def position(self, value):` to set it:<br>
+	- `position` must be a tuple of 2 positive integers, otherwise raise a `TypeError` exception with the message `position must be a tuple of 2 positive integers`<br>
+
 :white_check_mark: Instantiation with optional size and optional position: def __init__(self, size=0, position=(0, 0)):
 :white_check_mark: Public instance method: def area(self): that returns the current square area
 :white_check_mark: Public instance method: def my_print(self): that prints in stdout the square with the character #:
