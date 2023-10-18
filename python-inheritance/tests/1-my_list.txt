@@ -77,3 +77,7 @@ NameError: name 'e' is not defined
 >>> h.print_sorted()
 [1, 2, 3]
 
+>>> i = MyList
+>>> i.append("a")
+Traceback (most recent call last):
+TypeError: descriptor 'append' for 'list' objects doesn't apply to a 'str' object
