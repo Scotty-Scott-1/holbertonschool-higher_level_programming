@@ -29,3 +29,24 @@
 >>> a.print_sorted
 Traceback (most recent call last):
 NameError: name 'a' is not defined
+
+>>> b = [1, 2, 3]
+>>> print(b)
+[1, 2, 3]
+>>> b.print_sorted()
+Traceback (most recent call last):
+AttributeError: 'list' object has no attribute 'print_sorted'
+
+>>> c = "hi"
+>>> print(c)
+hi
+>>> c.print_sorted()
+Traceback (most recent call last):
+AttributeError: 'str' object has no attribute 'print_sorted'
+
+>>> d = 4
+>>> print(d)
+4
+>>> d.print_sorted()
+Traceback (most recent call last):
+AttributeError: 'int' object has no attribute 'print_sorted'
