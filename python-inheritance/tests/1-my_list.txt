@@ -69,3 +69,11 @@ NameError: name 'e' is not defined
 [5, 5, 5]
 >>> g.print_sorted()
 [5, 5, 5]
+
+>>> h = [3, 2, 1]
+>>> h = MyList(h)
+>>> print(h)
+[3, 2, 1]
+>>> h.print_sorted()
+[1, 2, 3]
+
