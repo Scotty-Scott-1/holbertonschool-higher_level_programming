@@ -9,6 +9,7 @@ class MyList(list):
     Methods:
         print_sorted: sorts self
     """
+
     def print_sorted(self):
         """A method that sorts and prints self"""
         print(sorted(self))
