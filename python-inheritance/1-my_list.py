@@ -3,13 +3,9 @@
 
 
 class MyList(list):
-    """
-    Mylist: A class that inherits the class list
-
-    Methods:
-        print_sorted: sorts self
-    """
+    """Mylist: A class that inherits the class list
+        Methods: print_sorted(self): sorts self"""
 
     def print_sorted(self):
-        """A method that sorts and prints self"""
+        """print list in order"""
         print(sorted(self))
