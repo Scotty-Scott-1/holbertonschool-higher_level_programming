@@ -9,7 +9,6 @@ class BaseGeometry:
     Methods:
         area: raises an error
     """
-
     def area(self):
         """raises an error"""
         raise AttributeError("area() is not implemented")
