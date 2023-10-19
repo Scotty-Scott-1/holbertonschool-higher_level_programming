@@ -16,12 +16,12 @@ TypeError: a must be an integer
 >>> base_geometry = BaseGeometry()
 >>> base_geometry.integer_validator()
 Traceback (most recent call last):
-TypeError: BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
+TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
 >>> base_geometry = BaseGeometry()
 >>> base_geometry.integer_validator(5, 5, 5)
 Traceback (most recent call last):
-TypeError: BaseGeometry.integer_validator() takes 3 positional arguments but 4 were given
+TypeError: integer_validator() takes 3 positional arguments but 4 were given
 
 >>> base_geometry = BaseGeometry()
 >>> base_geometry.integer_validator("a", -5)
@@ -36,9 +36,31 @@ Exception: area() is not implemented
 >>> base_geometry = BaseGeometry()
 >>> base_geometry.integer_validator("a")
 Traceback (most recent call last):
-TypeError: BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
+TypeError: integer_validator() missing 1 required positional argument: 'value'
 
 >>> base_geometry = BaseGeometry()
 >>> base_geometry.integer_validator("5")
 Traceback (most recent call last):
-TypeError: BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
+TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+>>> base_geometry = BaseGeometry()
+>>> base_geometry.integer_validator("a", "a", 5)
+Traceback (most recent call last):
+TypeError: integer_validator() takes 3 positional arguments but 4 were given
+
+>>> base_geometry = BaseGeometry()
+>>> base_geometry.integer_validator("5")
+Traceback (most recent call last):
+TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+>>> base_geometry.area(5)
+Traceback (most recent call last):
+Exception: area() is not implemented
+
+>>> base_geometry.integer_validator("a", 1, 1)
+Traceback (most recent call last):
+TypeError: integer_validator() takes 3 positional arguments but 4 were given
+
+>>> base_geometry.integer_validator("a", True)
+Traceback (most recent call last):
+TypeError: Test must be an integer
