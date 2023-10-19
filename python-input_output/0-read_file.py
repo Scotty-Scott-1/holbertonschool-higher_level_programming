@@ -5,5 +5,5 @@
 def read_file(filename=""):
     """a function that reads from a file and prints. closes file"""
     with open(filename, "r", encoding="utf-8") as file:
-        text = file.read().rstrip()
+        text = file.read()
         print(text, end="")
