@@ -12,3 +12,13 @@ ValueError: a must be greater than 0
 >>> base_geometry.integer_validator("a", "a")
 Traceback (most recent call last):
 TypeError: a must be an integer
+
+>>> base_geometry = BaseGeometry()
+>>> base_geometry.integer_validator("a", -5)
+Traceback (most recent call last):
+ValueError: a must be greater than 0
+
+>>> base_geometry = BaseGeometry()
+>>> base_geometry.area()
+Traceback (most recent call last):
+Exception: area() is not implemented
