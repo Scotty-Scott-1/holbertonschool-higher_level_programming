@@ -14,4 +14,3 @@ for arg in argv:
 my_list.pop(0)
 
 save_to(my_list, "add_item.json")
-print(load_from("add_item.json"))
