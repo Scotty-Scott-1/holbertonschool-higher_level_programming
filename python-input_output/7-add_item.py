@@ -3,6 +3,7 @@
 
 
 from sys import argv
+import os
 
 
 save_to = __import__('5-save_to_json_file').save_to_json_file
@@ -13,4 +14,12 @@ for arg in argv:
     my_list.append(arg)
 my_list.pop(0)
 
-save_to(my_list, "add_item.json")
+try:
+    my_obj = load_from("add_item.json")
+
+    for i in my_list:
+        my_obj.append(i)
+    save_to(my_obj, "add_item.json")
+
+except Exception:
+    save_to(my_list, "add_item.json")
