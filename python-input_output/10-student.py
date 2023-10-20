@@ -24,7 +24,6 @@ class Student:
         key_order = ["age", "last_name", "first_name"]
 
         new_json_dict = {}
-
         for key in key_order:
             if key in json_dict:
                 new_json_dict[key] = json_dict[key]
