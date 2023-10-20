@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 """a module that returns a json dict of an obj"""
-
-
 import json
 
 
