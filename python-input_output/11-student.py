@@ -32,6 +32,8 @@ class Student:
 
     def reload_from_json(self, json):
         """updated student info"""
+        if not json:
+            return
         self.age = json["age"]
         self.first_name = json["first_name"]
         self.last_name = json["last_name"]
