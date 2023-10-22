@@ -81,3 +81,15 @@ NameError: name 'e' is not defined
 >>> i.append("a")
 Traceback (most recent call last):
 TypeError: descriptor 'append' for 'list' objects doesn't apply to a 'str' object
+
+>>> my_list = MyList()
+>>> my_list.print_sorted()
+[]
+
+>>> my_list = MyList()
+>>> my_list.append('A')
+>>> my_list.append('Z')
+>>> my_list.print_sorted()
+Traceback (most recent call last):
+TypeError: Not all elements in the list are integers
+
