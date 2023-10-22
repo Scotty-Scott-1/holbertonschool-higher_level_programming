@@ -99,3 +99,25 @@ TypeError: descriptor 'append' for 'list' objects doesn't apply to a 'str' objec
 >>> my_list = MyList(empty_list)
 >>> my_list.print_sorted()
 []
+
+>>> print_sorted()
+Traceback (most recent call last):
+NameError: name 'print_sorted' is not defined
+
+>>> MyList = __import__('1-my_list').MyList
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>> my_list.append(4)
+>>> my_list.append(2)
+>>> my_list.append(3)
+>>> my_list.append(5)
+>>> my_list.print_sorted()
+[1, 2, 3, 4, 5]
+
+
+>>> my_list = MyList()
+>>> my_list.append('A')
+>>> my_list.append('Z')
+>>> my_list.print_sorted()
+Traceback (most recent call last):
+TypeError: Not all elements in the list are integers
