@@ -5,10 +5,9 @@
 >>> x.append(2)
 >>> x.append(4)
 >>> x.append(3)
->>> print(x)
-[1, 2, 4, 3]
+>>> x.append(5)
 >>> x.print_sorted()
-[1, 2, 3, 4]
+[1, 2, 3, 4, 5]
 
 >>> y = MyList()
 >>> y.append(-1)
@@ -91,3 +90,12 @@ TypeError: descriptor 'append' for 'list' objects doesn't apply to a 'str' objec
 >>> my_list.append('Z')
 >>> my_list.print_sorted()
 ['A', 'Z']
+
+>>> my_list = MyList()
+>>> my_list.print_sorted()
+[]
+
+>>> empty_list = []
+>>> my_list = MyList(empty_list)
+>>> my_list.print_sorted()
+[]
