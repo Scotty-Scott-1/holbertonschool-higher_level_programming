@@ -9,7 +9,7 @@ class Rectangle(Base):
         Parent: Base
 
     Methods:
-         __init__(self, width, height, x=0, y=0, id=None):
+        __init__(self, width, height, x=0, y=0, id=None):
             initalize an instance of Rectangle
 
         def width(self, value):
@@ -23,6 +23,16 @@ class Rectangle(Base):
 
          def x(self, value):
             setter for y
+
+        def __str__(self):
+            prints info: [Rectangle] (<id>) <x>/<y> - <width>/<height>
+
+        def update(self, *args):
+            updates attrs with a variable number of args
+            index: 0: id, 1: width, 2: height, 3: x, 4: y
+
+        def display(self):
+            prints the object in #s. takes into account x and y possition
 
     Attributes:
          super().__init__(id)
@@ -122,7 +132,7 @@ class Rectangle(Base):
         return self.__height * self.__width
 
     def display(self):
-        """prints the object in #s"""
+        """prints the object in #s. takes into account x and y possition"""
         for num in range(self.__y):
             print()
         for i in range(self.__height):
@@ -138,3 +148,16 @@ class Rectangle(Base):
             "[Rectangle] ({}) {}/{} - {}/{}"
             .format(self.id, self.__x, self.__y, self.__width, self.__height)
             )
+
+    def update(self, *args):
+        """updates attrs with a variable number of args"""
+        if len(args) == 1:
+            self.id = args[0]
+        if len(args) == 2:
+            self.__width = args[1]
+        if len(args) == 3:
+            self.__height = args[2]
+        if len(args) == 4:
+            self.__x = args[3]
+        if len(args) == 5:
+            self.__y = args[4]
