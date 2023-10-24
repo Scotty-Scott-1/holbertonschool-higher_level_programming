@@ -85,5 +85,5 @@ class Base:
                 if cls.__name__ == "Sqaure":
                     new_instance = cls(5)
 
-                new_instance.update(**dictionary)
-                return new_instance
+            new_instance.update(**dictionary)
+        return new_instance
