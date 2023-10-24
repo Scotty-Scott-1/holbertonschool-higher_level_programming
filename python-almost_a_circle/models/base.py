@@ -19,6 +19,10 @@ class Base:
         def save_to_file(cls, list_objs):
             write a json string representation of list_objs to a json file
 
+        @staticmethod
+        def from_json_string(json_string):
+            return a python list from json string
+
     Attributes:
         __nb_objects: count of instances of Base
 
@@ -53,3 +57,16 @@ class Base:
                 my_list.append(obj.to_dictionary())
         with open(json_file, "w") as file:
             file.write(Base.to_json_string(my_list))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """return a python list from json string"""
+        new_list = []
+        if json_string is None:
+            return new_list
+
+        if len(json_string) < 1:
+            return new_list
+
+        new_list = json.loads(json_string)
+        return new_list
