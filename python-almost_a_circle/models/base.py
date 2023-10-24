@@ -23,6 +23,10 @@ class Base:
         def from_json_string(json_string):
             return a python list from json string
 
+        @classmethod
+        def create(cls, **dictionary):
+            create an instance with values from dictionary(kwargs)
+
     Attributes:
         __nb_objects: count of instances of Base
 
@@ -70,3 +74,16 @@ class Base:
 
         new_list = json.loads(json_string)
         return new_list
+
+    @classmethod
+    def create(cls, **dictionary):
+        """create an instance with values from dictionary(kwargs)"""
+        if dictionary:
+            if len(dictionary) > 0:
+                if cls.__name__ == "Rectangle":
+                    new_instance = cls(5, 5)
+                if cls.__name__ == "Sqaure":
+                    new_instance = cls(5)
+
+                new_instance.update(**dictionary)
+                return new_instance
