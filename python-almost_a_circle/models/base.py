@@ -82,8 +82,8 @@ class Base:
             if len(dictionary) > 0:
                 if cls.__name__ == "Rectangle":
                     new_instance = cls(5, 5)
-                if cls.__name__ == "Sqaure":
+                if cls.__name__ == "Square":
                     new_instance = cls(5)
 
-            new_instance.update(**dictionary)
-        return new_instance
+                new_instance.update(**dictionary)
+                return new_instance
