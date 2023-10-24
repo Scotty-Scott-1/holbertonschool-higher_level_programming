@@ -34,6 +34,9 @@ class Rectangle(Base):
         def display(self):
             prints the object in #s. takes into account x and y possition
 
+        def to_dictionary(self):
+            a method that prints a dictionary representation of recangle
+
     Attributes:
          super().__init__(id)
         self.__width: width of rectangle
@@ -175,6 +178,7 @@ class Rectangle(Base):
                 self.__y = kwargs["y"]
 
     def to_dictionary(self):
+        """a method that prints a dictionary representation of recangle"""
         my_dict = {
                     "x": self.__x, "y": self.__y, "id": self.id,
                     "height": self.__height, "width": self.__width
