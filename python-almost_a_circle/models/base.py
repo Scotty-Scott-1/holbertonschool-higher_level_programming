@@ -52,4 +52,4 @@ class Base:
             for obj in list_objs:
                 my_list.append(obj.to_dictionary())
         with open(json_file, "w") as file:
-            json.dump(my_list, file)
+            file.write(Base.to_json_string(my_list))
