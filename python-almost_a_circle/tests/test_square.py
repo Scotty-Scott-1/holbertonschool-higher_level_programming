@@ -105,5 +105,120 @@ class TestSquare(unittest.TestCase):
         s1 = Square(1, 1, 1, 1)
         self.assertEqual(str(s1), "[Square] (1) 1/1 - 1")
 
+    def test_update_excess_agrs(self):
+        """14 test update"""
+        s1 = Square(1, 1, 1, 1)
+        s1.update(5, 5, 55, 55, 5, 5, 4, 8)
+        self.assertEqual(s1.id, 5)
+        self.assertEqual(s1.width, 5)
+        self.assertEqual(s1.height, 5)
+        self.assertEqual(s1.x, 55)
+        self.assertEqual(s1.y, 55)
+
+    def test_update_4_args(self):
+        """15 test update"""
+        s1 = Square(1, 1, 1, 1)
+        s1.update(5, 5, 55, 55)
+        self.assertEqual(s1.id, 5)
+        self.assertEqual(s1.width, 5)
+        self.assertEqual(s1.height, 5)
+        self.assertEqual(s1.x, 55)
+        self.assertEqual(s1.y, 55)
+
+    def test_update_3_args(self):
+        """14 test update"""
+        s1 = Square(1, 1, 1, 1)
+        s1.update(5, 5, 55)
+        self.assertEqual(s1.id, 5)
+        self.assertEqual(s1.width, 5)
+        self.assertEqual(s1.height, 5)
+        self.assertEqual(s1.x, 55)
+        self.assertEqual(s1.y, 1)
+
+    def test_update_2_args(self):
+        """14 test update"""
+        s1 = Square(1, 1, 1, 1)
+        s1.update(5, 5)
+        self.assertEqual(s1.id, 5)
+        self.assertEqual(s1.width, 5)
+        self.assertEqual(s1.height, 5)
+        self.assertEqual(s1.x, 1)
+        self.assertEqual(s1.y, 1)
+
+    def test_update_1_args(self):
+        """14 test update"""
+        s1 = Square(1, 1, 1, 1)
+        s1.update(5)
+        self.assertEqual(s1.id, 5)
+        self.assertEqual(s1.width, 1)
+        self.assertEqual(s1.height, 1)
+        self.assertEqual(s1.x, 1)
+        self.assertEqual(s1.y, 1)
+
+    def test_update_0_args(self):
+        """14 test update"""
+        s1 = Square(1, 1, 1, 1)
+        s1.update()
+        self.assertEqual(s1.id, 1)
+        self.assertEqual(s1.width, 1)
+        self.assertEqual(s1.height, 1)
+        self.assertEqual(s1.x, 1)
+        self.assertEqual(s1.y, 1)
+
+    def test_update_4_kwargs(self):
+        """14 test update"""
+        s1 = Square(1, 1, 1, 1)
+        s1.update(id=5, size=5, y=55, x=5)
+        self.assertEqual(s1.id, 5)
+        self.assertEqual(s1.width, 5)
+        self.assertEqual(s1.height, 5)
+        self.assertEqual(s1.x, 5)
+        self.assertEqual(s1.y, 55)
+
+    def test_update_3_kwargs(self):
+        """14 test update"""
+        s1 = Square(1, 1, 1, 1)
+        s1.update(id=5, size=5, y=55)
+        self.assertEqual(s1.id, 5)
+        self.assertEqual(s1.width, 5)
+        self.assertEqual(s1.height, 5)
+        self.assertEqual(s1.x, 1)
+        self.assertEqual(s1.y, 55)
+
+    def test_update_2_kwargs(self):
+        """14 test update"""
+        s1 = Square(1, 1, 1, 1)
+        s1.update(id=5, size=5)
+        self.assertEqual(s1.id, 5)
+        self.assertEqual(s1.width, 5)
+        self.assertEqual(s1.height, 5)
+        self.assertEqual(s1.x, 1)
+        self.assertEqual(s1.y, 1)
+
+    def test_update_1_kwargs(self):
+        """14 test update"""
+        s1 = Square(1, 1, 1, 1)
+        s1.update(size=5)
+        self.assertEqual(s1.id, 1)
+        self.assertEqual(s1.width, 5)
+        self.assertEqual(s1.height, 5)
+        self.assertEqual(s1.x, 1)
+        self.assertEqual(s1.y, 1)
+
+    def test_update_args_and_kwargs(self):
+        """14 test update"""
+        s1 = Square(1, 1, 1, 1)
+        s1.update(6, 6, 6, 6, id=5, size=5, y=55, x=5)
+        self.assertEqual(s1.id, 6)
+        self.assertEqual(s1.width, 6)
+        self.assertEqual(s1.height, 6)
+        self.assertEqual(s1.x, 6)
+        self.assertEqual(s1.y, 6)
+
+    def test_to_dict(self):
+        s1 = Square(1, 2, 3, 99)
+        expected = {"id": 99, "x": 2, "size": 1, "y": 3}
+        self.assertEqual(s1.to_dictionary(), expected)
+
     if __name__ == "__main__":
         unittest.main()
