@@ -10,7 +10,6 @@ class Test_Base(unittest.TestCase):
         If the list is empty, the function returns None
     """
 
-
     def test_init(self):
         b = Base()
         self.assertEqual(b.id, 4)
@@ -69,6 +68,7 @@ class Test_Base(unittest.TestCase):
     def test_from_json_string_with_none(self):
         obj_list = Base.from_json_string(None)
         self.assertEqual(obj_list, [])
+
 
 if __name__ == '__main__':
     unittest.main()
