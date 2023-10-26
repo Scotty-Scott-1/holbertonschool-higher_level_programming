@@ -18,7 +18,7 @@ class TestSquare(unittest.TestCase):
         """1 define a Sqaure with no args"""
         with self.assertRaises(TypeError) as e:
             s1 = Square()
-        expected = ("Square.__init__() missing 1 required "
+        expected = ("__init__() missing 1 required "
                     "positional argument: 'size'")
         self.assertEqual(str(e.exception), expected)
 
@@ -57,7 +57,7 @@ class TestSquare(unittest.TestCase):
         """6 define a Sqaure with 5 args"""
         with self.assertRaises(TypeError) as e:
             s1 = Square(5, 5, 5, 5, 5)
-        expected = ("Square.__init__() takes from 2 to 5 "
+        expected = ("__init__() takes from 2 to 5 "
                     "positional arguments but 6 were given")
         self.assertEqual(str(e.exception), expected)
 
