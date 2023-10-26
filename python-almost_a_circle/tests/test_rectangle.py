@@ -1,21 +1,21 @@
 #!/usr/bin/python3
-"""Module to test the condition of max integer in a list
-"""
+"""Tests for class rectangle"""
 import unittest
 import sys
 from io import StringIO
 from models.rectangle import Rectangle
+from models.base import Base
 from unittest.mock import patch
 
 
 class Test_Rectangle(unittest.TestCase):
-    """Function to find and return the max integer in a list of integers
-        If the list is empty, the function returns None
-    """
+    """tests for class rectangle"""
+    def setUp(self):
+        Base._Base__nb_objects = 0
 
     def test_init(self):
         r = Rectangle(2, 3)
-        self.assertEqual(r.id, 23)
+        self.assertEqual(r.id, 1)
         self.assertEqual(r.width, 2)
         self.assertEqual(r.height, 3)
 
@@ -208,7 +208,7 @@ class Test_Rectangle(unittest.TestCase):
     def test_to_dictionary_default_values(self):
         # Create a Rectangle with default values
         rect = Rectangle(1, 1)
-        expected_dict = {'id': 24, 'width': 1, 'height': 1, 'x': 0, 'y': 0}
+        expected_dict = {'id': 1, 'width': 1, 'height': 1, 'x': 0, 'y': 0}
         self.assertEqual(rect.to_dictionary(), expected_dict)
 
     def test_to_dictionary_non_default_values(self):
