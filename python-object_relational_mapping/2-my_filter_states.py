@@ -1,10 +1,12 @@
 #!/usr/bin/python3
-from sys import argv
-import MySQLdb
 """
 A function that access the database lists all states that begin
 with command line argv 4.
 """
+
+
+from sys import argv
+import MySQLdb
 
 
 if __name__ == "__main__":
