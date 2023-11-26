@@ -23,8 +23,13 @@ if __name__ == "__main__":
     cur.execute(query, ("{}".format(state_name),))
     query_rows = cur.fetchall()
 
+    result = ""
     for row in query_rows:
-        print(row[0])
+        result += row[0]
+        if row != query_rows[-1]:
+            result += ", "
+
+    print(result)
 
     cur.close()
     conn.close()
