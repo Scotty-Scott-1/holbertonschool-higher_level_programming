@@ -19,11 +19,11 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     Mysession = Session()
 
-    new = State(name='Maine')
+    new = State(name="Louisiana")
     Mysession.add(new)
 
     new_row = Mysession.query(State).order_by(State.id.desc()).first()
-    print(new_row.id)
     Mysession.commit()
 
+    print(new_row.id)
     Mysession.close()
